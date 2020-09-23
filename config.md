@@ -5,7 +5,8 @@ The website_* must be defined for the RSS to work
 -->
 @def website_title = "Deep Learning DIY"
 @def website_descr = "Website for deep learning course"
-@def website_url   = "https://tlienart.github.io/FranklinTemplates.jl/"
+@def prepath = "website"
+@def website_url   = "https://dataflowr.github.io/website/"
 
 @def author = "Marc Lelarge"
 
