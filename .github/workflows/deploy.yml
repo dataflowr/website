@@ -1,4 +1,4 @@
-ame: Build and Deploy
+name: Build and Deploy
 on:
   push:
     # NOTE: For a **project** site (username.github.io/project/), push things
