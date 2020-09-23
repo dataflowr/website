@@ -66,8 +66,7 @@ function hfun_youtube_placeholder(params)
                 playerVars: { 'autoplay': 0, 'rel': 0, 'cc_load_policy': 1  }
               });
             }
-    </script>
-    <script>
+    
     function changeYouTubeSource(startTime, endTime) {
     
       var youtubeIframe = document.getElementById('player');
