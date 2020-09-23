@@ -67,48 +67,48 @@ function hfun_youtube_placeholder(params)
               });
             }
     </script>
-<script>
-function changeYouTubeSource(startTime, endTime) {
- 
-  // Get the src attribute of the YouTube iframe.
-  var youtubeIframe = document.getElementById('player');
- 
-  var youtubeIframeSrc = document.getElementById('player').getAttribute('src');
- 
-  // Variables for assigning in the condition below.
-  var trimmedIframeUrl = '';
-  var iframeUrlTimeStamp = '';
- 
-  // If the src attribute URL already contains a media fragment, remove it.
-  if (youtubeIframeSrc.match(/&start=/g) ) {
-      var mediaFragmentIndex = youtubeIframeSrc.indexOf('&start=');
-      trimmedIframeUrl = youtubeIframeSrc.slice(0, mediaFragmentIndex);
- 
-      if (endTime === 0) {
-          iframeUrlTimeStamp = trimmedIframeUrl + '&start=' + startTime;
-      } else {
-          iframeUrlTimeStamp = trimmedIframeUrl + '&start=' + startTime + '&end=' + endTime;
+    <script>
+    function changeYouTubeSource(startTime, endTime) {
+    
+      // Get the src attribute of the YouTube iframe.
+      var youtubeIframe = document.getElementById('player');
+    
+      var youtubeIframeSrc = document.getElementById('player').getAttribute('src');
+    
+      // Variables for assigning in the condition below.
+      var trimmedIframeUrl = '';
+      var iframeUrlTimeStamp = '';
+    
+      // If the src attribute URL already contains a media fragment, remove it.
+      if (youtubeIframeSrc.match(/&start=/g) ) {
+          var mediaFragmentIndex = youtubeIframeSrc.indexOf('&start=');
+          trimmedIframeUrl = youtubeIframeSrc.slice(0, mediaFragmentIndex);
+    
+          if (endTime === 0) {
+              iframeUrlTimeStamp = trimmedIframeUrl + '&start=' + startTime;
+          } else {
+              iframeUrlTimeStamp = trimmedIframeUrl + '&start=' + startTime + '&end=' + endTime;
+          }
       }
-  }
- 
-  // If the src attribute URL doesn't contain a media fragment, add one.
-  if (youtubeIframeSrc.match(/&start=/g) === null) {
-      if (endTime === 0) {
-          iframeUrlTimeStamp = youtubeIframeSrc + '&start=' + startTime;
-      } else {
-          iframeUrlTimeStamp = youtubeIframeSrc + '&start=' + startTime + '&end=' + endTime;
+    
+      // If the src attribute URL doesn't contain a media fragment, add one.
+      if (youtubeIframeSrc.match(/&start=/g) === null) {
+          if (endTime === 0) {
+              iframeUrlTimeStamp = youtubeIframeSrc + '&start=' + startTime;
+          } else {
+              iframeUrlTimeStamp = youtubeIframeSrc + '&start=' + startTime + '&end=' + endTime;
+          }
       }
-  }
-  // 1 second delay to allow for scrolling to video.
-    setTimeout(function() {
-        // Enable autoplay on the new URL.
-        var iframeAutoplayUrl = iframeUrlTimeStamp.replace('autoplay=0', 'autoplay=1' );
- 
-        // Set the src attribute as the original URL with the media fragment appended.
-        youtubeIframe.setAttribute('src', iframeAutoplayUrl);
-    }, 1000);
-}
-</script>
+      // 1 second delay to allow for scrolling to video.
+        setTimeout(function() {
+            // Enable autoplay on the new URL.
+            var iframeAutoplayUrl = iframeUrlTimeStamp.replace('autoplay=0', 'autoplay=1' );
+    
+            // Set the src attribute as the original URL with the media fragment appended.
+            youtubeIframe.setAttribute('src', iframeAutoplayUrl);
+        }, 1000);
+    }
+    </script>
     """
 end
 
