@@ -96,10 +96,9 @@ function hfun_youtube_placeholder(params)
       }
       
         setTimeout(function() {
-            // Enable autoplay on the new URL.
+            
             var iframeAutoplayUrl = iframeUrlTimeStamp.replace('autoplay=0', 'autoplay=1' );
     
-            // Set the src attribute as the original URL with the media fragment appended.
             youtubeIframe.setAttribute('src', iframeAutoplayUrl);
         }, 1000);
     }
