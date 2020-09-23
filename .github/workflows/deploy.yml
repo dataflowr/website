@@ -25,15 +25,15 @@ jobs:
     # Python is necessary for pre-rendering steps as well as to install
     # matplotlib which is necessary if you intend to use PyPlot. If you do
     # not, then you can remove the `run: pip install matplotlib` line.
-    - name: Install python
-      uses: actions/setup-python@v1
-      with:
-        python-version: '3.x'
-    - run: pip install matplotlib # if you use PyPlot this is needed
+    #- name: Install python
+    #  uses: actions/setup-python@v1
+    #  with:
+    #    python-version: '3.x'
+    #- run: pip install matplotlib # if you use PyPlot this is needed
     - name: Install Julia
       uses: julia-actions/setup-julia@v1
       with:
-        version: 1.3.0
+        version: 1.4
     # This ensures that NodeJS and Franklin are loaded then it installs
     # highlight.js which is needed for the prerendering step.
     # Then the environment is activated and instantiated to install all
@@ -53,4 +53,4 @@ jobs:
         # Set this to `BRANCH: gh-pages` for a **project** page and  to
         # `BRANCH: master` for a **personal** page
         BRANCH: gh-pages
-        FOLDER: __site
+        FOLDER: website/__site
