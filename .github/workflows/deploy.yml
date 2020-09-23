@@ -41,7 +41,7 @@ jobs:
     # NOTE: the last line should be `optimize()`, you may want to give it
     # specific arguments, see the documentation or ?optimize in the REPL.
     - run: julia -e '
-            using Pkg; Pkg.add(["NodeJS", "Franklin"]);
+            using Pkg; Pkg.add(["NodeJS", "JSON", "Franklin"]);
             using NodeJS; run(`$(npm_cmd()) install highlight.js`);
             using Franklin;
             Pkg.activate("."); Pkg.instantiate();
