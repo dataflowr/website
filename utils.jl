@@ -51,57 +51,62 @@ function hfun_youtube_placeholder(params)
             <div id="player"></div>        
     </div>
     <script>
-            var tag = document.createElement('script');
+    var tag = document.createElement('script');
 
-            tag.src = "https://www.youtube.com/iframe_api";
-            var firstScriptTag = document.getElementsByTagName('script')[0];
-            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-            var player;
-            function onYouTubeIframeAPIReady() {
-              player = new YT.Player('player', {
-                height: '300',
-                width: '100%',
-                videoId: '$(get(videos, id, id))',
-                playerVars: { 'autoplay': 0, 'rel': 0, 'cc_load_policy': 1  }
-              });
+    var player;
+
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            height: '300',
+            width: '100%',
+            videoId: '$(get(videos, id, id))',
+            playerVars: {
+                'autoplay': 0,
+                'rel': 0,
+                'cc_load_policy': 1
             }
-    
+        });
+    }
+
     function changeYouTubeSource(startTime, endTime) {
-    
-      var youtubeIframe = document.getElementById('player');
-    
-      var youtubeIframeSrc = document.getElementById('player').getAttribute('src');
-    
-      var trimmedIframeUrl = '';
-      var iframeUrlTimeStamp = '';
-    
-      if (youtubeIframeSrc.match(/&start=/g) ) {
-          var mediaFragmentIndex = youtubeIframeSrc.indexOf('&start=');
-          trimmedIframeUrl = youtubeIframeSrc.slice(0, mediaFragmentIndex);
-    
-          if (endTime === 0) {
-              iframeUrlTimeStamp = trimmedIframeUrl + '&start=' + startTime;
-          } else {
-              iframeUrlTimeStamp = trimmedIframeUrl + '&start=' + startTime + '&end=' + endTime;
-          }
-      }
-    
-      if (youtubeIframeSrc.match(/&start=/g) === null) {
-          if (endTime === 0) {
-              iframeUrlTimeStamp = youtubeIframeSrc + '&start=' + startTime;
-          } else {
-              iframeUrlTimeStamp = youtubeIframeSrc + '&start=' + startTime + '&end=' + endTime;
-          }
-      }
-      
+
+        var youtubeIframe = document.getElementById('player');
+
+        var youtubeIframeSrc = document.getElementById('player').getAttribute('src');
+
+        var trimmedIframeUrl = '';
+        var iframeUrlTimeStamp = '';
+
+        if (youtubeIframeSrc.match(/&start=/g)) {
+            var mediaFragmentIndex = youtubeIframeSrc.indexOf('&start=');
+            trimmedIframeUrl = youtubeIframeSrc.slice(0, mediaFragmentIndex);
+
+            if (endTime === 0) {
+                iframeUrlTimeStamp = trimmedIframeUrl + '&start=' + startTime;
+            } else {
+                iframeUrlTimeStamp = trimmedIframeUrl + '&start=' + startTime + '&end=' + endTime;
+            }
+        }
+
+        if (youtubeIframeSrc.match(/&start=/g) === null) {
+            if (endTime === 0) {
+                iframeUrlTimeStamp = youtubeIframeSrc + '&start=' + startTime;
+            } else {
+                iframeUrlTimeStamp = youtubeIframeSrc + '&start=' + startTime + '&end=' + endTime;
+            }
+        }
+
         setTimeout(function() {
-            
-            var iframeAutoplayUrl = iframeUrlTimeStamp.replace('autoplay=0', 'autoplay=1' );
-    
+
+            var iframeAutoplayUrl = iframeUrlTimeStamp.replace('autoplay=0', 'autoplay=1');
+
             youtubeIframe.setAttribute('src', iframeAutoplayUrl);
         }, 1000);
-    }
+}
     </script>
     """
 end
