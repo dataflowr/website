@@ -17,7 +17,7 @@
 {{yt_tsp 31 0 Goal of this lecture}}
 {{yt_tsp 128 0 What is deep learning?}}
 {{yt_tsp 426 0 Why deep learning now?}}
-{{yt_tsp 573 Deep learning pipeline}}
+{{yt_tsp 573 0 Deep learning pipeline}}
 {{yt_tsp 737 0 Overview of the course}}
 {{yt_tsp  962 0 Organization of the course}}
 {{yt_tsp  1104 0 A first example in Colab (setting)}}
