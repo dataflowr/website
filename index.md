@@ -11,6 +11,14 @@ Then we hope you'll become a [contributor](#for-contributors) by adding modules 
 
 ## For students
 
+Pre-requisites:
+- Mathematics: basics of linear algebra, probability, differential calculus and optimization
+- Programming: basic proficiency Python
+
+### Annotation tool
+
+- [hypothes.is](https://hypothes.is/groups/EzzjE8gb/deep-learning-ens-2020) allows you to annotate this website and the web in general!
+
 ### Social interactions
 
 - [Discord](https://discord.gg/): discussion (we encourage you to hang out here during class!)
