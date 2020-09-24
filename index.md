@@ -21,7 +21,7 @@ Pre-requisites:
 
 ### Social interactions
 
-- [Discord](https://discord.gg/): discussion (we encourage you to hang out here during class!)
+- [Discord](https://discord.gg/nZQ3fe3): discussion (we encourage you to hang out here during class!)
 
 - [Forum](https://forum.dataflowr.com/): discussion
 

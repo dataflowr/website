@@ -32,11 +32,11 @@
 ## Slides and Notebook
 
 - [slides](http://mlelarge.github.io/dataflowr-slides/PlutonAI/lesson1.html)
-- [notebook](https://github.com/mlelarge/dataflowr/blob/master/PlutonAI/01_intro_PlutonAI_colab.ipynb) in [colab](https://colab.research.google.com/github/mlelarge/dataflowr/blob/master/PlutonAI/01_intro_PlutonAI_colab.ipynb) Dogs and Cats with VGG.
+- [notebook](https://github.com/dataflowr/notebooks/blob/master/Module1/01_intro.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module1/01_intro.ipynb) Dogs and Cats with VGG.
 
 ## Practicals
 
-- [More dogs and cats with VGG and resnet](https://github.com/mlelarge/dataflowr/blob/master/PlutonAI/01_practical_PlutonAI_empty_colab.ipynb) in [colab](https://colab.research.google.com/github/mlelarge/dataflowr/blob/master/PlutonAI/01_practical_PlutonAI_empty_colab.ipynb)
+- [More dogs and cats with VGG and resnet](https://github.com/dataflowr/notebooks/blob/master/Module1/01_practical_empty.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module1/01_practical_empty.ipynb)
 
 - Ask your questions on the [forum](https://forum.dataflowr.com/t/lesson-1-machine-learning-pipeline/14)
 
