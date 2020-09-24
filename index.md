@@ -4,7 +4,7 @@
 
 \blurb{This site collects resources to learn Deep Learning in the form of Modules available through the sidebar on the left. 
 As a student, you can walk through the modules at your own pace and interact with others thanks to the associated [digital platforms](#social-interactions). 
-Then we hope you'll become a [contributor](#for-contributors) by adding modules to this site!}
+Then we hope you'll become a [contributor](#for_contributors) by adding modules to this site!}
 
 ## Curators
 [Marc Lelarge](https://www.di.ens.fr/~lelarge/), [Jill-Jênn Vie](https://jill-jenn.net/)
@@ -27,7 +27,7 @@ Pre-requisites:
 
 ## For contributors
 
-TBD
+Join the [GitHub repo dataflowr/website](https://github.com/dataflowr/website) and make a pull request. [What are pull requests?](https://yangsu.github.io/pull-request-tutorial/)
 
 ## Evaluation
 
