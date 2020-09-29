@@ -1,7 +1,7 @@
 @def sequence = ["loss_functions"]
 
 ~~~
-<h1>Module 3a - Loss functions</h1>
+<h1>Module 3 - Loss functions for classification</h1>
 ~~~
 
 **Table of Contents**
@@ -9,7 +9,7 @@
 \toc
 
 
-## Loss functions
+## Loss functions for classification
 
 {{youtube_placeholder loss_functions}}
 
@@ -37,5 +37,5 @@
 
 ## Slides and Notebook
 
-- [slides](http://mlelarge.github.io/dataflowr-slides/PlutonAI/lesson3.html)
+- [slides](https://dataflowr.github.io/slides/module3.html)
 - [notebook](https://github.com/dataflowr/notebooks/blob/master/Module3/03_polynomial_regression.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module3/03_polynomial_regression.ipynb) An explanation of underfitting and overfitting with polynomial regression.

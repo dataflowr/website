@@ -6,4 +6,5 @@ videos = Dict(
               "pytorch-tensors" => "BmAS8IH7n3c",
               "automatic-diff" => "Z6H3zakmn6E",
               "loss-functions" => "jReGEZXq4Ac",
+              "optim-basics" => "UvM0hK4E2dc"
 )

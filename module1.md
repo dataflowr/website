@@ -31,7 +31,7 @@
 
 ## Slides and Notebook
 
-- [slides](http://mlelarge.github.io/dataflowr-slides/PlutonAI/lesson1.html)
+- [slides](https://dataflowr.github.io/slides/module1.html)
 - [notebook](https://github.com/dataflowr/notebooks/blob/master/Module1/01_intro.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module1/01_intro.ipynb) Dogs and Cats with VGG.
 
 ## Practicals
