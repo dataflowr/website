@@ -28,7 +28,7 @@
 
 ## Slides and Notebook
 
-- [backprop slide](https://raw.githubusercontent.com/mlelarge/dataflowr-slides/master/PlutonAI/backprop.pdf) (used for the practical below)
+- [backprop slide](https://raw.githubusercontent.com/dataflowr/slides/master/backprop.pdf) (used for the practical below)
 - [notebook](https://github.com/dataflowr/notebooks/blob/master/Module2/02b_linear_reg.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module2/02b_linear_reg.ipynb)
 
 ## Practicals
