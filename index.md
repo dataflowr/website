@@ -17,7 +17,7 @@ Pre-requisites:
 
 ### Annotation tool
 
-- [hypothes.is](https://hypothes.is/groups/EzzjE8gb/deep-learning-ens-2020) allows you to annotate this website and the web in general!
+- [hypothes.is](https://hypothes.is/groups/EzzjE8gb/deep-learning-ens-2020) allows you to annotate this website and the web in general. You'll find some hints for the practicals here!
 
 ### Social interactions
 
