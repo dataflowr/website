@@ -7,5 +7,6 @@ videos = Dict(
               "automatic-diff" => "Z6H3zakmn6E",
               "loss-functions" => "jReGEZXq4Ac",
               "optim-basics" => "UvM0hK4E2dc",
-              "pytorch-module" => "OiyZXdnLHcI"
+              "pytorch-module" => "OiyZXdnLHcI",
+              "conv" => "HyotcucT-PE"
 )
