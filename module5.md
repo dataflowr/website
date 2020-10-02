@@ -1,7 +1,7 @@
 @def sequence = ["pytorch-module"]
 
 ~~~
-<h1>Module 5 - writing a PyTorch module</h1>
+<h1>Module 5 - Stacking layers</h1>
 ~~~
 
 **Table of Contents**
@@ -9,7 +9,7 @@
 \toc
 
 
-## writing a PyTorch module
+## Stacking layers
 
 {{youtube_placeholder pytorch-module}}
 

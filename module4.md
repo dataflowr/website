@@ -27,7 +27,7 @@
 {{yt_tsp 1479 0 AMSGrad}}
 {{yt_tsp 1629 0 Pytorch optimizers}}
 
-## Slides and Notebook
+## Slides and Practicals
 
 - [slides](https://dataflowr.github.io/slides/module4.html)
-- [notebook](https://github.com/dataflowr/notebooks/blob/master/Module4/04_gradient_descent_optimization_algorithms_empty.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module4/04_gradient_descent_optimization_algorithms_empty.ipynb) An explanation of underfitting and overfitting with polynomial regression.
+- [notebook](https://github.com/dataflowr/notebooks/blob/master/Module4/04_gradient_descent_optimization_algorithms_empty.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module4/04_gradient_descent_optimization_algorithms_empty.ipynb) Code your optimizers. [solution](https://forum.dataflowr.com/t/link-to-solution-3-optimizers/56)  (forum login required)
