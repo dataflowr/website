@@ -1,4 +1,4 @@
-@def sequence = ["loss_functions"]
+@def sequence = ["loss-functions"]
 
 ~~~
 <h1>Module 3 - Loss functions for classification</h1>
@@ -11,7 +11,7 @@
 
 ## Loss functions for classification
 
-{{youtube_placeholder loss_functions}}
+{{youtube_placeholder loss-functions}}
 
 {{yt_tsp 0 0 Recap}}
 {{yt_tsp 145 0 How to choose your loss?}}
