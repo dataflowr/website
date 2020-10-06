@@ -12,13 +12,13 @@
 
 ## Modules
 
-- [Module 1: Introduction & General Overview](./modules/module1-intro-general-overview)
-- [Module 2a: Pytorch Tensors](./modules/module2a-pytorch-tensors)
-- [Module 2b: Automatic Differentiation](./modules/module2b-automatic-differentiation)
-- [Module 3: Loss functions for classification](./modules/module3-loss-functions-for-classification)
-- [Module 4: Optimization for Deep Learning](./modules/module4-optimization-for-deep-learning)
-- [Module 5: Stacking layers](./modules/module5-stacking-layers)
-- [Module 6: Convolutional Neural Network](./modules/module6-convolutional-neural-network)
+- [Module 1: Introduction & General Overview](./modules/1-intro-general-overview)
+- [Module 2a: Pytorch Tensors](./modules/2a-pytorch-tensors)
+- [Module 2b: Automatic Differentiation](./modules/2b-automatic-differentiation)
+- [Module 3: Loss functions for classification](./modules/3-loss-functions-for-classification)
+- [Module 4: Optimization for Deep Learning](./modules/4-optimization-for-deep-learning)
+- [Module 5: Stacking layers](./modules/5-stacking-layers)
+- [Module 6: Convolutional Neural Network](./modules/6-convolutional-neural-network)
 
 ## Curators
 
