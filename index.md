@@ -19,6 +19,12 @@
 - [Module 4: Optimization for Deep Learning](./modules/4-optimization-for-deep-learning)
 - [Module 5: Stacking layers](./modules/5-stacking-layers)
 - [Module 6: Convolutional Neural Network](./modules/6-convolutional-neural-network)
+- [Module 7a: Embedding layers and dataloaders](./modules/7a-embedding-layers-dataloaders)
+- [Module 7b: Collaborative Filtering](./modules/7b-collaborative-filtering)
+- [Modules 8: Autoencoders](./modules/8-autoencoders)
+- [Module 9: Generative Adversarial Networks](./modules/9-generative-adversarial-networks)
+- [Module 10a: Recurrent Neural Networks theory](./modules/10a-recurrent-neural-networks-theory)
+- [Module 10b: Recurrent Neural Networks practice](./modules/10b-recurrent-neural-networks-practice)
 
 ## Curators
 
