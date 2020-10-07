@@ -1,0 +1,44 @@
+<!doctype html> <html lang=en > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/website/libs/highlight/github.min.css"> <link rel=stylesheet  href="/website/css/franklin.css"> <link rel=stylesheet  href="/website/css/poole_hyde.css"> <link rel=stylesheet  href="/website/css/custom.css"> <style> html {font-size: 17px;} .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;} @media (min-width: 940px) { .franklin-content {width: 100%; margin-left: auto; margin-right: auto;} } @media (max-width: 768px) { .franklin-content {padding-left: 6%; padding-right: 6%;} } </style> <link rel=icon  href="/website/assets/favicon.png"> <title>Setup</title> <div class=sidebar > <div class="container sidebar-sticky"> <div class=sidebar-about > <img src="/website/assets/dataflowr_violet_plain_square.png" style="width: 120px; height: auto; display: inline"> <img src="/website/assets/favicon.png" style="margin-left:1em; position:relative;left:0px; top:-30px; width: 60px; height: auto; display: inline"> <h1 style="font-size:1em; opacity: 0.95;"><a href="/website/">Deep Learning DIY</a></h1> </div> <nav class=sidebar-nav > <a class="sidebar-nav-item active" href="/website/module0/"><b>Module 0</b> - <em> Software installation</em></a> <div class=week >week 1</div> <a class="sidebar-nav-item " href="/website/module1/"><b>Module 1</b> - <em>Introduction & General Overview</em></a> <a class="sidebar-nav-item " href="/website/module2a/"><b>Module 2a</b> - <em>PyTorch tensors</em></a> <a class="sidebar-nav-item " href="/website/module2b/"><b>Module 2b</b> - <em>Automatic differentiation</em></a> <div class=week >week 2</div> <a class="sidebar-nav-item " href="/website/module3/"><b>Module 3</b> - <em>Loss functions for classification</em></a> <a class="sidebar-nav-item " href="/website/module4/"><b>Module 4</b> - <em>Optimization for DL</em></a> <a class="sidebar-nav-item " href="/website/module5/"><b>Module 5</b> - <em>Stacking layers</em></a> <a class="sidebar-nav-item " href="/website/hw1/"><b>Homework 1</b> - <em>MLP</em></a> <div class=week >week 3</div> <a class="sidebar-nav-item " href="/website/module6/"><b>Module 6</b> - <em>Convolutional neural network</em></a> <a class="sidebar-nav-item " href="/website/module7a/"><b>Module 7a</b> - <em>Embedding layers and dataloaders</em></a> <a class="sidebar-nav-item " href="/website/module7b/"><b>Module 7b</b> - <em>Collaborative filtering</em></a> <a class="sidebar-nav-item " href="/website/module8/"><b>Module 8</b> - <em>Autoencoders</em></a> <a class="sidebar-nav-item " href="/website/module9/"><b>Module 9</b> - <em>Generative adversarial networks</em></a> <a class="sidebar-nav-item " href="/website/module10a/"><b>Module 10a</b> - <em>Recurrent Neural Networks (theory)</em></a> <a class="sidebar-nav-item " href="/website/module10b/"><b>Module 10b</b> - <em>RNN in practice</em></a> </nav> </div> </div> <div class="content container"> <div class=franklin-content ><h1 id=setup ><a href="#setup">Setup</a></h1> <h2 id=running_the_notebooks_locally ><a href="#running_the_notebooks_locally">Running the notebooks locally</a></h2> <p>To run the <a href="https://github.com/dataflowr/notebooks">notebooks</a> locally, we recommend the following procedure:</p> <ul> <li><p>First clone the GitHub repository containing the notebooks. The following command will create a directory <code>notebooks</code> with all the files from the repository inside:</p> </ul> <pre><code class="julia hljs">$ git clone https://github.com/dataflowr/notebooks.git</code></pre>
+<ul>
+<li><p>Then, create a <a href="https://docs.python.org/3/tutorial/venv.html">virtual environment</a>: the following command will create a directory <code>dldiy</code> and also create directories inside it &#40;so you might want to create this directory inside <code>/notebooks</code>&#41;</p>
+
+</ul>
+<pre><code class="julia hljs">$ python3 -m venv dldiy</code></pre>
+<ul>
+<li><p>Activate the virtual environment:</p>
+
+</ul>
+<pre><code class="julia hljs">$ source dldiy/bin/activate</code></pre>
+<ul>
+<li><p>In order to be able to <a href="https://anbasile.github.io/posts/2017-06-25-jupyter-venv/">use this virtual environment with your jupyter notebook</a>, you need to add a kernel. Inside your environment, install first <code>ipykernel</code></p>
+
+</ul>
+<pre><code class="julia hljs">(dldiy)$ pip install ipykernel
+(dldiy)$ ipython kernel install --user --name=dldiy</code></pre>
+<ul>
+<li><p>Now, you need all the relevant packages in your virtual environment. </p>
+
+</ul>
+<pre><code class="julia hljs">(dldiy)$ cd notebooks
+(dldiy)/notebooks$ pip install -r requirements.txt</code></pre>
+<ul>
+<li><p>You ae all set&#33; If you launch <code>jupyter notebook</code>, you should be able to change the kernel to <code>dldiy</code>.</p>
+
+</ul>
+<h3 id=tldr ><a href="#tldr">tl;dr</a></h3>
+<pre><code class="julia hljs">$ git clone https://github.com/dataflowr/notebooks.git
+$ python3 -m venv dldiy
+$ source dldiy/bin/activate
+(dldiy)$ pip install ipykernel
+(dldiy)$ ipython kernel install --user --name=dldiy
+(dldiy)$ cd notebooks
+(dldiy)/notebooks$ pip install -r requirements.txt
+(dldiy)/notebooks$ jupyter notebook</code></pre>
+<div class=page-foot >
+  <div class=copyright >
+    <a href="https://github.com/dataflowr/website/tree/master"><b>Edit this page on <img class=github-logo  src="https://unpkg.com/ionicons@5.1.2/dist/svg/logo-github.svg"></b></a>
+    Last modified: October 07, 2020. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+  </div>
+</div>
+</div>
+    </div>

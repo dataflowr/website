@@ -2,56 +2,68 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-    <loc>https://dataflowr.github.io/website/module1/index.html</loc>
-    <lastmod>2020-10-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
     <loc>https://dataflowr.github.io/website/module2b/index.html</loc>
-    <lastmod>2020-10-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://dataflowr.github.io/website/404/index.html</loc>
-    <lastmod>2020-10-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://dataflowr.github.io/website/module4/index.html</loc>
-    <lastmod>2020-10-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://dataflowr.github.io/website/module2a/index.html</loc>
-    <lastmod>2020-10-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://dataflowr.github.io/website/module5/index.html</loc>
-    <lastmod>2020-10-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://dataflowr.github.io/website/module6/index.html</loc>
-    <lastmod>2020-10-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://dataflowr.github.io/website/module3/index.html</loc>
-    <lastmod>2020-10-04</lastmod>
+    <lastmod>2020-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://dataflowr.github.io/website/index.html</loc>
-    <lastmod>2020-10-04</lastmod>
+    <lastmod>2020-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://dataflowr.github.io/website/module0/index.html</loc>
+    <lastmod>2020-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://dataflowr.github.io/website/module2a/index.html</loc>
+    <lastmod>2020-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://dataflowr.github.io/website/module4/index.html</loc>
+    <lastmod>2020-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://dataflowr.github.io/website/module5/index.html</loc>
+    <lastmod>2020-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://dataflowr.github.io/website/module6/index.html</loc>
+    <lastmod>2020-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://dataflowr.github.io/website/hw1/index.html</loc>
+    <lastmod>2020-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://dataflowr.github.io/website/module1/index.html</loc>
+    <lastmod>2020-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://dataflowr.github.io/website/404/index.html</loc>
+    <lastmod>2020-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://dataflowr.github.io/website/module3/index.html</loc>
+    <lastmod>2020-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
