@@ -2,7 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-    <loc>https://dataflowr.github.io/website/module2b/index.html</loc>
+    <loc>https://dataflowr.github.io/website/modules/0-sotfware-installation/index.html</loc>
+    <lastmod>2020-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://dataflowr.github.io/website/modules/3-loss-functions-for-classification/index.html</loc>
+    <lastmod>2020-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://dataflowr.github.io/website/modules/6-convolutional-neural-network/index.html</loc>
+    <lastmod>2020-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://dataflowr.github.io/website/modules/5-stacking-layers/index.html</loc>
+    <lastmod>2020-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://dataflowr.github.io/website/homework/1-mlp-from-scratch/index.html</loc>
+    <lastmod>2020-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://dataflowr.github.io/website/modules/4-optimization-for-deep-learning/index.html</loc>
     <lastmod>2020-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -14,43 +44,37 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://dataflowr.github.io/website/module0/index.html</loc>
+    <loc>https://dataflowr.github.io/website/modules/7a-embedding-layers-dataloaders/index.html</loc>
     <lastmod>2020-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://dataflowr.github.io/website/module2a/index.html</loc>
+    <loc>https://dataflowr.github.io/website/modules/10b-recurrent-neural-networks-practice/index.html</loc>
     <lastmod>2020-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://dataflowr.github.io/website/module4/index.html</loc>
+    <loc>https://dataflowr.github.io/website/modules/2b-automatic-differentiation/index.html</loc>
     <lastmod>2020-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://dataflowr.github.io/website/module5/index.html</loc>
+    <loc>https://dataflowr.github.io/website/modules/9-generative-adversarial-networks/index.html</loc>
     <lastmod>2020-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://dataflowr.github.io/website/module6/index.html</loc>
+    <loc>https://dataflowr.github.io/website/modules/1-intro-general-overview/index.html</loc>
     <lastmod>2020-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://dataflowr.github.io/website/hw1/index.html</loc>
-    <lastmod>2020-10-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://dataflowr.github.io/website/module1/index.html</loc>
+    <loc>https://dataflowr.github.io/website/modules/8-autoencoders/index.html</loc>
     <lastmod>2020-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -62,7 +86,19 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://dataflowr.github.io/website/module3/index.html</loc>
+    <loc>https://dataflowr.github.io/website/modules/7b-collaborative-filtering/index.html</loc>
+    <lastmod>2020-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://dataflowr.github.io/website/modules/10a-recurrent-neural-networks-theory/index.html</loc>
+    <lastmod>2020-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://dataflowr.github.io/website/modules/2a-pytorch-tensors/index.html</loc>
     <lastmod>2020-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
