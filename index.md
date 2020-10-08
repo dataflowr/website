@@ -12,6 +12,7 @@
 
 ## Modules
 
+- [Module 0: Software installation](./modules/0-sotfware-installation)
 - [Module 1: Introduction & General Overview](./modules/1-intro-general-overview)
 - [Module 2a: Pytorch Tensors](./modules/2a-pytorch-tensors)
 - [Module 2b: Automatic Differentiation](./modules/2b-automatic-differentiation)
