@@ -8,5 +8,7 @@ videos = Dict(
               "loss-functions" => "jReGEZXq4Ac",
               "optim-basics" => "UvM0hK4E2dc",
               "pytorch-module" => "OiyZXdnLHcI",
-              "conv" => "HyotcucT-PE"
+              "conv" => "HyotcucT-PE",
+              "dataloading-emb" => "vm-ZusIUkiY",
+              "collab-filt" => "TaEWBB00Els"
 )
