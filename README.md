@@ -6,7 +6,7 @@ through the modules at your own pace and interact with others thanks
 to the associated digital platforms. Then we hope you'll become a
 contributor by adding modules to this site!
 
-## Setup
+## Setup to run the website locally
 
 1. Install [Julia](https://julialang.org/downloads/)
 2. Launch Julia from the command line:
