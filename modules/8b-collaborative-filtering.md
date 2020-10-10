@@ -27,8 +27,10 @@
 
 ## Notebook
 
-- [notebook](https://github.com/dataflowr/notebooks/blob/master/Module8/08_collaborative_filtering_empty.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module8/08_collaborative_filtering_empty.ipynb) 
+- [notebook](https://github.com/dataflowr/notebooks/blob/master/Module8/08_collaborative_filtering_empty.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module8/08_collaborative_filtering_empty.ipynb) Collaborating filtering.
 
 ## Practicals
 
 {{yt_tsp 831 0 Start with your implementation of the dot model}}
+
+- [notebook](https://github.com/dataflowr/notebooks/blob/master/Module8/08_collaborative_filtering_1M.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module8/08_collaborative_filtering_1M.ipynb) refactoring the code.
