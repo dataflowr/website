@@ -34,6 +34,7 @@ Pre-requisites:
 
 Join the [GitHub repo dataflowr/website](https://github.com/dataflowr/website) and make a pull request. [What are pull requests?](https://yangsu.github.io/pull-request-tutorial/)
 
+<!-- to be updated
 ## Modules
 
 - [Module 0: Software installation](./modules/0-sotfware-installation)
@@ -50,7 +51,7 @@ Join the [GitHub repo dataflowr/website](https://github.com/dataflowr/website) a
 - [Module 9: Generative Adversarial Networks](./modules/9-generative-adversarial-networks)
 - [Module 10a: Recurrent Neural Networks theory](./modules/10a-recurrent-neural-networks-theory)
 - [Module 10b: Recurrent Neural Networks practice](./modules/10b-recurrent-neural-networks-practice)
-
+-->
 
 ## Evaluation
 
