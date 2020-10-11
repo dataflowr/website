@@ -10,5 +10,7 @@ videos = Dict(
               "pytorch-module" => "OiyZXdnLHcI",
               "conv" => "HyotcucT-PE",
               "dataloading-emb" => "vm-ZusIUkiY",
-              "collab-filt" => "TaEWBB00Els"
+              "collab-filt" => "TaEWBB00Els",
+              "autoencoder" => "Z1OWiTFafpQ",
+              "gan" => "tqhmilLuJRs"
 )
