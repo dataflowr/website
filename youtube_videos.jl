@@ -13,5 +13,6 @@ videos = Dict(
               "collab-filt" => "TaEWBB00Els",
               "autoencoder" => "Z1OWiTFafpQ",
               "gan" => "tqhmilLuJRs",
-              "rnn-1" => "4G681MnP_OA"
+              "rnn-1" => "4G681MnP_OA",
+              "rnn-2" => "EsS95AxCnh0"
 )
