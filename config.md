@@ -3,7 +3,7 @@ Add here global page variables to use throughout your
 website.
 The website_* must be defined for the RSS to work
 -->
-@def website_title = "Deep Learning DIY"
+@def title = "Dataflowr - Deep Learning DIY"
 @def website_descr = "Website for deep learning course"
 @def prepath = "website"
 @def website_url   = "https://dataflowr.github.io/website/"

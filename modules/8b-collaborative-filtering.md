@@ -1,8 +1,7 @@
 @def sequence = ["collab-filt"]
 
-~~~
-<h1>Module 8b - Collaborative filtering</h1>
-~~~
+# Module 8b - Collaborative filtering
+
 
 **Table of Contents**
 

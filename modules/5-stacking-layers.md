@@ -1,8 +1,6 @@
 @def sequence = ["pytorch-module"]
 
-~~~
-<h1>Module 5 - Stacking layers</h1>
-~~~
+# Module 5 - Stacking layers
 
 **Table of Contents**
 

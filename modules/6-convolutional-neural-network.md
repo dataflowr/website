@@ -1,8 +1,6 @@
 @def sequence = ["conv"]
 
-~~~
-<h1>Module 6 - Convolutional neural network</h1>
-~~~
+# Module 6 - Convolutional neural network
 
 **Table of Contents**
 

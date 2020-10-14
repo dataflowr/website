@@ -1,8 +1,6 @@
 @def sequence = ["autoencoder"]
 
-~~~
-<h1>Module 9 - Autoencoders</h1>
-~~~
+# Module 9 - Autoencoders
 
 **Table of Contents**
 

@@ -1,8 +1,7 @@
 @def sequence = ["rnn-2"]
 
-~~~
-<h1>Module 11b - Recurrent Neural Networks practice</h1>
-~~~
+# Module 11b - Recurrent Neural Networks practice
+
 
 **Table of Contents**
 

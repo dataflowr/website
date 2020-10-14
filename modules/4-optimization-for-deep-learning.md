@@ -1,8 +1,7 @@
 @def sequence = ["optim-basics"]
 
-~~~
-<h1>Module 4 - Optimization for deep leaning</h1>
-~~~
+# Module 4 - Optimization for deep leaning
+
 
 **Table of Contents**
 

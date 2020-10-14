@@ -1,8 +1,6 @@
 @def sequence = ["loss-functions"]
 
-~~~
-<h1>Module 3 - Loss functions for classification</h1>
-~~~
+# Module 3 - Loss functions for classification
 
 **Table of Contents**
 

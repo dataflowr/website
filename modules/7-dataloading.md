@@ -1,8 +1,6 @@
 @def sequence = ["dataloading-emb"]
 
-~~~
-<h1>Module 7 - Dataloading</h1>
-~~~
+# Module 7 - Dataloading
 
 **Table of Contents**
 

@@ -1,8 +1,7 @@
 @def sequence = ["dataloading-emb"]
 
-~~~
-<h1>Module 8a - Embedding layers</h1>
-~~~
+# Module 8a - Embedding layers
+
 
 **Table of Contents**
 

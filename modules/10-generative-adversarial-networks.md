@@ -1,8 +1,7 @@
 @def sequence = ["gan"]
 
-~~~
-<h1>Module 10 - Generative Adversarial Networks</h1>
-~~~
+# Module 10 - Generative Adversarial Networks
+
 
 **Table of Contents**
 

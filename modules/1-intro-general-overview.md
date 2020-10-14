@@ -1,8 +1,6 @@
 @def sequence = ["course-intro"]
 
-~~~
-<h1>Module 1 - Introduction & General Overview</h1>
-~~~
+# Module 1 - Introduction & General Overview
 
 **Table of Contents**
 
