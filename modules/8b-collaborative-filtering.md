@@ -26,12 +26,14 @@
 
 ## Notebook
 
-- [notebook](https://github.com/dataflowr/notebooks/blob/master/Module8/08_collaborative_filtering_empty.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module8/08_collaborative_filtering_empty.ipynb) Collaborating filtering.
+- [notebook](https://github.com/dataflowr/notebooks/blob/master/Module8/08_collaborative_filtering_empty.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module8/08_collaborative_filtering_empty.ipynb) Collaborative filtering.
 
 ## Practicals
 
 {{yt_tsp 831 0 Start with your implementation of the dot model}}
 
 - [notebook](https://github.com/dataflowr/notebooks/blob/master/Module8/08_collaborative_filtering_1M.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module8/08_collaborative_filtering_1M.ipynb) refactoring the code.
+
+- [implementing word2vec as matrix factorization](https://github.com/dataflowr/notebooks/blob/master/Module8/08_word2vec.ipynb)
 
 - [solutions](https://forum.dataflowr.com/t/links-to-solution-5-collaborative-filtering/73)  (forum login required)
