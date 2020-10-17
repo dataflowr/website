@@ -37,3 +37,9 @@
 
 - [slides](https://dataflowr.github.io/slides/module3.html)
 - [notebook](https://github.com/dataflowr/notebooks/blob/master/Module3/03_polynomial_regression.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module3/03_polynomial_regression.ipynb) An explanation of underfitting and overfitting with polynomial regression.
+
+## Frequently asked questions
+
+### Why using the sigmoid as link function for classification?
+
+Because its gradient has simple form: $\sigma' = \sigma(1 - \sigma)$.
