@@ -15,7 +15,7 @@
 {{yt_tsp 77 0 1D convolutional networks for sequences}}
 {{yt_tsp 136 0 Various tasks for RNNs}}
 {{yt_tsp 315 0 Theory of RNN}}
-{{yt_tsp 479 0 Backprop fro RNN}}
+{{yt_tsp 479 0 Backprop for RNN}}
 {{yt_tsp 630 0 A binary classification problem for sequences}}
 {{yt_tsp 1037 0 Elman network}}
 {{yt_tsp 1262 0 Training RNN}}
