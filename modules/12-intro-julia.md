@@ -20,4 +20,4 @@
 
 ## Notebook
 
-- [notebook](https://github.com/dataflowr/notebooks/blob/master/Module2/AD_with_dual_numbers_Julia.ipynb)
+- [notebook](https://github.com/dataflowr/notebooks/blob/master/Module2/AD_with_dual_numbers_Julia.ipynb) (you need to install Julia)
