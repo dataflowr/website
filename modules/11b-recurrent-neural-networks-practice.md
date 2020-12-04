@@ -27,6 +27,9 @@
 
 ## References
 
+> Hewitt, J., Hahn, M., Ganguli, S., Liang, P., & Manning, C. D. (2020). RNNs can generate bounded hierarchical languages with optimal memory.[arXiv:2010.07515](https://arxiv.org/abs/2010.07515)
+
+
 Machine translation
 
 > Sutskever, I., Vinyals, O., & Le, Q. V. (2014). [Sequence to sequence learning with neural networks.](http://papers.neurips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf) In Advances in neural information processing systems (pp. 3104-3112).
