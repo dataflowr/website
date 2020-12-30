@@ -58,6 +58,7 @@ Join the [GitHub repo dataflowr/website](https://github.com/dataflowr/website) a
 Materials from this site is used for courses at ENS and X. To validate these courses, please connect to the appropriate moodle:
 
 - [ENS Moodle](https://moodle.ens.psl.eu/enrol/index.php?id=1020): (ENS and affiliated students)
+- [X Moodle](https://moodle.polytechnique.fr/course/view.php?id=9406): (X and affiliated students)
 
 ~~~
 <img src="/assets/ENS_logo.jpg" style="width: 400px; height: auto; display: inline">
