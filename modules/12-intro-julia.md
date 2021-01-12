@@ -20,4 +20,6 @@
 
 ## Notebook
 
-- [notebook](https://github.com/dataflowr/notebooks/blob/master/Module2/AD_with_dual_numbers_Julia.ipynb) (you need to install Julia) or use [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dataflowr/julia-notebooks.jl/HEAD)
+- [notebook](https://github.com/dataflowr/julia-notebooks.jl/blob/main/AD_with_dual_numbers_Julia.ipynb) (you need to install Julia) or use:
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dataflowr/julia-notebooks.jl/HEAD)
