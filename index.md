@@ -12,7 +12,7 @@
 
 ## Curators
 
-[Marc Lelarge](https://www.di.ens.fr/~lelarge/), [Jill-Jênn Vie](https://jill-jenn.net/)
+[Marc Lelarge](https://www.di.ens.fr/~lelarge/), [Jill-Jênn Vie](https://jill-jenn.net/), [Andrei Bursuc](https://abursuc.github.io/)
 
 ## For students
 
