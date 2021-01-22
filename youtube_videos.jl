@@ -17,5 +17,6 @@ videos = Dict(
               "rnn-2" => "EsS95AxCnh0",
               "privacy-preserving" => "68aCbiPIgnM",
               "batches-seq" => "Fqx_RCwenfg",
-              "intro-julia" => "oL_T_NVoz9w"
+              "intro-julia" => "oL_T_NVoz9w",
+              "siamese" => "6x4IPITZ4dw"
 )
