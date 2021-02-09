@@ -18,5 +18,8 @@ videos = Dict(
               "privacy-preserving" => "68aCbiPIgnM",
               "batches-seq" => "Fqx_RCwenfg",
               "intro-julia" => "oL_T_NVoz9w",
-              "siamese" => "6x4IPITZ4dw"
+              "siamese" => "6x4IPITZ4dw",
+              "ben-depth" => "l-J93Onvj70",
+              "pbs-depth" => "cBrDJ0KHxCs",
+              "dropout" => "gWiJr_y0Tgs"
 )
