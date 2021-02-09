@@ -11,3 +11,7 @@
 ## The Problems with Depth
 
 {{youtube_placeholder pbs-depth}}
+
+## Slides
+
+- [slides](https://abursuc.github.io/slides/polytechnique/14-02-problems.html#1)
