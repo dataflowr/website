@@ -98,6 +98,12 @@
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>https://dataflowr.github.io/website/modules/17-resnets/index.html</loc>
+    <lastmod>2021-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>https://dataflowr.github.io/website/modules/2b-automatic-differentiation/index.html</loc>
     <lastmod>2021-02-09</lastmod>
     <changefreq>monthly</changefreq>
@@ -129,6 +135,12 @@
 </url>
 <url>
     <loc>https://dataflowr.github.io/website/modules/11c-batches-with-sequences/index.html</loc>
+    <lastmod>2021-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://dataflowr.github.io/website/modules/16-batchnorm/index.html</loc>
     <lastmod>2021-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

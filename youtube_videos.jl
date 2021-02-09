@@ -21,5 +21,7 @@ videos = Dict(
               "siamese" => "6x4IPITZ4dw",
               "ben-depth" => "l-J93Onvj70",
               "pbs-depth" => "cBrDJ0KHxCs",
-              "dropout" => "gWiJr_y0Tgs"
+              "dropout" => "gWiJr_y0Tgs",
+              "batchnorm" => "cKSCyTODbDI",
+              "resnets" => "LdJV4oHgO28"
 )
