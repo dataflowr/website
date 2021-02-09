@@ -1,6 +1,6 @@
 @def sequence = ["siamese"]
 
-# Module 12 - Siamese Networks and Representation Learning
+# Module 13 - Siamese Networks and Representation Learning
 
 
 **Table of Contents**
