@@ -1,6 +1,6 @@
 @def sequence = ["siamese"]
 
-# Module 12 - Siamese Networks and Representation Learning
+# Module 13 - Siamese Networks and Representation Learning
 
 
 **Table of Contents**
@@ -29,4 +29,6 @@
 ## Slides and Notebook
 
 - [slides](https://abursuc.github.io//slides/polytechnique/siamese-networks.html#1)
+
 - [notebook](https://github.com/dataflowr/notebooks/blob/master/Module13/13_siamese_triplet_mnist_empty.ipynb) 
+
