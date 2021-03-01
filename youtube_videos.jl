@@ -23,5 +23,8 @@ videos = Dict(
               "pbs-depth" => "cBrDJ0KHxCs",
               "dropout" => "gWiJr_y0Tgs",
               "batchnorm" => "cKSCyTODbDI",
-              "resnets" => "LdJV4oHgO28"
+              "resnets" => "LdJV4oHgO28",
+              "graph1" => "Ch0Iz8BJn98",
+              "graph2" => "o1CfrsSTRAU"
+
 )
