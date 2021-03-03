@@ -26,3 +26,7 @@
 ## Slides
 
 - [slides](https://dataflowr.github.io/slides/deep_graph_2.html)
+
+## Notebook
+
+- [notebook](https://github.com/dataflowr/notebooks/blob/master/graphs/spectral_gnn.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/graphs/spectral_gnn.ipynb)
