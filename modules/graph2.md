@@ -30,3 +30,7 @@
 ## Notebook
 
 - [notebook](https://github.com/dataflowr/notebooks/blob/master/graphs/spectral_gnn.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/graphs/spectral_gnn.ipynb)
+
+## Posts
+
+- [Inductive bias in GCN: a spectral perspective](../extras/GCN_inductivebias_spectral/) (run the [code](https://github.com/dataflowr/notebooks/blob/master/graphs/GCN_inductivebias_spectral.ipynb) or open it in [Colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/graphs/GCN_inductivebias_spectral-colab.ipynb))
