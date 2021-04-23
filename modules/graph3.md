@@ -30,3 +30,7 @@
 ## Slides
 
 - [slides](https://dataflowr.github.io/slides/deep_graph_3.html)
+
+## Post
+
+- [Invariant and equivariant layers with applications to GNN, Pointnet and Transformers](../extras/invariant_equivariant)

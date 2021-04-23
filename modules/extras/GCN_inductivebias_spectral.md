@@ -4,6 +4,8 @@ __author: [Marc Lelarge](https://www.di.ens.fr/~lelarge/), course: [dataflowr](h
 
 __run the [code](https://github.com/dataflowr/notebooks/blob/master/graphs/GCN_inductivebias_spectral.ipynb) or open it in [Colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/graphs/GCN_inductivebias_spectral-colab.ipynb)__
 
+date: April 15, 2021
+
 Here, we focus on Graph Convolution Networks (GCN) introduced by Kipf and Welling in their paper [Semi-Supervised Classification with Graph Convolutional Networks](https://arxiv.org/abs/1609.02907).
 The GCN layer is one of the simplest Graph Neural Network layer defined by:
 \begin{equation}
@@ -403,7 +405,3 @@ Follow on [twitter](https://twitter.com/marc_lelarge)!
 
 ## Thanks for reading!
 
-
-```python
-
-```

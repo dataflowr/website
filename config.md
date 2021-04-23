@@ -91,7 +91,15 @@ NOTE:
 See franklinjl.org for more information on how to introduce your own
 definitions and how they can be useful.
 -->
+\newcommand{\note}[1]{@@note @@title ⚠ Note@@ @@content #1 @@ @@}
+\newcommand{\warn}[1]{@@warning @@title ⚠ Warning!@@ @@content #1 @@ @@}
 
+\newcommand{\E}{\mathbb E} 
+\newcommand{\R}{\mathbb R}
+\newcommand{\Sc}{\mathcal S} 
+\newcommand{\bx}{{\bf x}}
+\newcommand{\by}{{\bf y}}
+\newcommand{\be}{{\bf e}}
 
 <!-- INTERNAL DEFINITIONS =====================================================
 ===============================================================================
