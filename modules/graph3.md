@@ -33,4 +33,4 @@
 
 ## Post
 
-- [Invariant and equivariant layers with applications to GNN, Pointnet and Transformers](../extras/invariant_equivariant)
+- [Invariant and equivariant layers with applications to GNN, PointNet and Transformers](../extras/invariant_equivariant)

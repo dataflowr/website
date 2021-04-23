@@ -1,7 +1,7 @@
 @def title = "Invariant Equivaraint layers"
 @def hasmath = true
 
-# Invariant and equivariant layers with applications to GNN, Pointnet and Transformers
+# Invariant and equivariant layers with applications to GNN, PointNet and Transformers
 
 __author: [Marc Lelarge](https://www.di.ens.fr/~lelarge/), course: [dataflowr](https://dataflowr.github.io/website/)__
 
