@@ -3,7 +3,7 @@
 
 # Convolutions (and Discrete Fourier Transform) from first principles
 
-__author: [Marc Lelarge](https://www.di.ens.fr/~lelarge/), course: [dataflowr](https://dataflowr.github.io/website/), module: [Convolutional neural network](http://localhost:8000/modules/6-convolutional-neural-network/)__
+__author: [Marc Lelarge](https://www.di.ens.fr/~lelarge/), course: [dataflowr](https://dataflowr.github.io/website/), module: [Convolutional neural network](https://dataflowr.github.io/website/modules/6-convolutional-neural-network/)__
 
 date: June 8, 2021
 
