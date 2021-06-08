@@ -15,7 +15,7 @@ biclasses = [<span class=hljs-built_in >int</span>(b) <span class=hljs-keyword >
 G = to_networkx(data, to_undirected=<span class=hljs-literal >True</span>)
 visualize(G, color=biclasses)</code></pre> <p><img src="../GCN_inductivebias_spectral_files/GCN_inductivebias_spectral_7_0.png" alt=png  /></p> <p>The <a href="https://en.wikipedia.org/wiki/Kernighan&#37;E2&#37;80&#37;93Lin_algorithm">Kernighan Lin algorithm</a> is a heuristic algorithm for finding partitions of graphs and the results below show that it captures well our homophily assumption. Indeed the algorithm tries to minimize the number of crossing edges between the 2 communities.</p> <pre><code class="python hljs">c1,c2 = nx.algorithms.community.kernighan_lin_bisection(G)
 classes_kl = [<span class=hljs-number >0</span> <span class=hljs-keyword >if</span> i <span class=hljs-keyword >in</span> c1 <span class=hljs-keyword >else</span> <span class=hljs-number >1</span> <span class=hljs-keyword >for</span> i <span class=hljs-keyword >in</span> <span class=hljs-built_in >range</span>(<span class=hljs-number >34</span>)]
-visualize(G, color=classes_kl, cmap=<span class=hljs-string >&quot;Set2&quot;</span>)</code></pre> <p><img src="../GCN_inductivebias_spectral_files/GCN_inductivebias_spectral_10_0.png" alt=png  /></p> <pre><code class="python hljs"><span class=hljs-function ><span class=hljs-keyword >def</span> <span class=hljs-title >acc</span>(<span class=hljs-params >predicitions, classes</span>):</span>
+visualize(G, color=classes_kl, cmap=<span class=hljs-string >&quot;Set2&quot;</span>)</code></pre> <p><img src="../GCN_inductivebias_spectral_files/GCN_inductivebias_spectral_10_0.png" alt=png  /></p> <pre><code class="python hljs"><span class=hljs-keyword >def</span> <span class="hljs-title function_">acc</span>(<span class=hljs-params >predicitions, classes</span>):
     n_tot = <span class=hljs-built_in >len</span>(classes)
     acc = np.<span class=hljs-built_in >sum</span>([<span class=hljs-built_in >int</span>(pred)==cla <span class=hljs-keyword >for</span> pred,cla <span class=hljs-keyword >in</span> <span class=hljs-built_in >zip</span>(predicitions,classes)])
     <span class=hljs-keyword >return</span> <span class=hljs-built_in >max</span>(acc, n_tot-acc), n_tot
@@ -31,14 +31,14 @@ _ = plt.hist(all_acc, bins=bin_list,rwidth=<span class=hljs-number >0.8</span>)<
 <span class=hljs-keyword >from</span> torch_geometric.nn <span class=hljs-keyword >import</span> GCNConv
 <span class=hljs-keyword >import</span> torch.nn.functional <span class=hljs-keyword >as</span> F
 
-<span class=hljs-class ><span class=hljs-keyword >class</span> <span class=hljs-title >GCN</span>(<span class=hljs-params >torch.nn.Module</span>):</span>
-    <span class=hljs-function ><span class=hljs-keyword >def</span> <span class=hljs-title >__init__</span>(<span class=hljs-params >self</span>):</span>
+<span class=hljs-keyword >class</span> <span class="hljs-title class_">GCN</span>(torch.nn.Module):
+    <span class=hljs-keyword >def</span> __init__(self):
         <span class=hljs-built_in >super</span>(GCN, self).__init__()
         self.conv1 = GCNConv(data.num_nodes, <span class=hljs-number >4</span>)<span class=hljs-comment ># no feature...</span>
         self.conv2 = GCNConv(<span class=hljs-number >4</span>, <span class=hljs-number >4</span>)
         self.conv3 = GCNConv(<span class=hljs-number >4</span>, <span class=hljs-number >2</span>)
 
-    <span class=hljs-function ><span class=hljs-keyword >def</span> <span class=hljs-title >forward</span>(<span class=hljs-params >self, x, edge_index</span>):</span>
+    <span class=hljs-keyword >def</span> <span class="hljs-title function_">forward</span>(<span class=hljs-params >self, x, edge_index</span>):
         h = self.conv1(x, edge_index)
         h = h.tanh()
         h = self.conv2(h, edge_index)
@@ -194,7 +194,7 @@ _ = plt.hist(coef, bins = <span class=hljs-number >34</span>)</code></pre>
 <div class=page-foot >
   <div class=copyright >
     <a href="https://github.com/dataflowr/website/tree/master"><b>Edit this page on <img class=github-logo  src="https://unpkg.com/ionicons@5.1.2/dist/svg/logo-github.svg"></b></a>
-    Last modified: April 23, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+    Last modified: June 08, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
   </div>
 </div>
 </div>
