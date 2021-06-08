@@ -100,6 +100,10 @@ definitions and how they can be useful.
 \newcommand{\bx}{{\bf x}}
 \newcommand{\by}{{\bf y}}
 \newcommand{\be}{{\bf e}}
+\newcommand{\ba}{{\bf a}}
+\newcommand{\bb}{{\bf b}}
+\newcommand{\bv}{{\bf v}}
+\newcommand{\bw}{{\bf w}}
 
 <!-- INTERNAL DEFINITIONS =====================================================
 ===============================================================================

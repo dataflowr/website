@@ -28,3 +28,8 @@
 {{yt_tsp 1704 0 Practicals: your first CNN}}
 
 - [solution](https://forum.dataflowr.com/t/link-to-solution-4-first-cnn/57) (forum login required)
+
+
+## Post
+
+- [Convolutions (and Discrete Fourier Transform) from first principles](../extras/Convolutions_first/)
