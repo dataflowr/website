@@ -1,4 +1,4 @@
-@def title = "Invariant Equivaraint layers"
+@def title = "Invariant and Equivariant layers"
 @def hasmath = true
 
 # Invariant and equivariant layers with applications to GNN, PointNet and Transformers
