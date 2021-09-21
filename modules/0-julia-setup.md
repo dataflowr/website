@@ -64,4 +64,8 @@ as a result this will modify (automatically) the files `Project.toml` and `Manif
 
 ## Start testing
 
+TBD
+
 ## Start documenting
+
+TBD
