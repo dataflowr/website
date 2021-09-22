@@ -1,6 +1,6 @@
 # Projects in Julia 
 
-Even for a personal project, we recommend to make a simple Julia package. This is a simple tutorial to help you coding an app in Julia.
+Even for a personal project, we recommend to make a simple Julia package (like in python you use virtual environment). This is a simple tutorial to help you coding an app in Julia.
 
 ## Prerequisite
 
@@ -19,7 +19,7 @@ git config --global user.email "bla.bla@domain.ext"
 git config --global github.user "ghuser"
 ```
 
-Now, I describe the steps used to make a package called [KalmanAD.jl](https://github.com/mlelarge/KalmanAD.jl), you need to replace `KalmanAD.jl` by the name of your package and `mlelarge` by your `github.user`! This particular package is irrelevant but since naming (with extension `.jl` for example) can be a little bit tricky, if you have any doubt, you can have a look at the package to see how things are organized...
+Now, I describe the steps used to make a package called [KalmanAD.jl](https://github.com/mlelarge/KalmanAD.jl), you need to replace `KalmanAD.jl` by the name of your package and `mlelarge` by your `github.user`! This particular package has nothing specific but since naming (with extension `.jl` for example) can be a little bit tricky, if you have any doubt, you can have a look at the package on GitHub to see how things are organized...
 
 Move to the folder where you want to create your package: we will use Julia to create a folder `KalmanAD.jl` with the right structure. For this, start Julia and enter the package installation mode by typing `]` then run (to exit the `pkg>` mode just type on Backspace)
 ```
@@ -64,7 +64,11 @@ as a result this will modify (automatically) the files `Project.toml` and `Manif
 
 ## Start testing
 
-TBD
+In the `test` folder, there is a `runtest.jl` file that should contain the tests for your package. You need to use the macro `@test` which will raise an error if the expression does  not evaluate to `true`.
+In order to run your tests, you can use:
+```
+julia --project test/runtest.jl
+```
 
 ## Start documenting
 
