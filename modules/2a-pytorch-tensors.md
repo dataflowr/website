@@ -25,4 +25,4 @@
 
 - [notebook](https://github.com/dataflowr/notebooks/blob/master/Module2/02a_basics.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module2/02a_basics.ipynb)
 
-- Ask your question on the [forum](https://forum.dataflowr.com/t/lesson-2-tensors-and-automatic-differentiation/15) 
+<!-- - Ask your question on the [forum](https://forum.dataflowr.com/t/lesson-2-tensors-and-automatic-differentiation/15) -->

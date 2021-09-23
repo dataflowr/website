@@ -12,7 +12,7 @@
 
 ## Curators
 
-[Marc Lelarge](https://www.di.ens.fr/~lelarge/), [Jill-Jênn Vie](https://jill-jenn.net/), [Andrei Bursuc](https://abursuc.github.io/)
+[Marc Lelarge](https://www.di.ens.fr/~lelarge/), [Jill-Jênn Vie](https://jill-jenn.net/), [Andrei Bursuc](https://abursuc.github.io/). [Kevin Scaman](https://scaman.wordpress.com/)
 
 ## For students
 
@@ -21,14 +21,14 @@ Pre-requisites:
 - Mathematics: basics of linear algebra, probability, differential calculus and optimization
 - Programming: basic proficiency Python
 
-### Annotation tool
+<!-- ### Annotation tool
 
 - [hypothes.is](https://hypothes.is/groups/EzzjE8gb/deep-learning-ens-2020) allows you to annotate this website and the web in general. You'll find some hints for the practicals here!
-
-### Social interactions
-
-- [Discord](https://discord.gg/nZQ3fe3): discussion (we encourage you to hang out here during class!)
-- [Forum](https://forum.dataflowr.com/): discussion
+-->
+### Social interactions:
+use this [Discord link](https://discord.gg/nZQ3fe3) to join the discussion!
+<!-- - [Forum](https://forum.dataflowr.com/): discussion
+- -->
 
 ## For contributors
 
@@ -57,8 +57,8 @@ Join the [GitHub repo dataflowr/website](https://github.com/dataflowr/website) a
 
 Materials from this site is used for courses at ENS and X. To validate these courses, please connect to the appropriate moodle:
 
-- [ENS Moodle](https://moodle.ens.psl.eu/enrol/index.php?id=1020): (ENS and affiliated students)
-- [X Moodle](https://moodle.polytechnique.fr/course/view.php?id=9406): (X and affiliated students)
+- [ENS Moodle](https://moodle.ens.psl.eu/): (ENS and affiliated students)
+- [X Moodle](https://moodle.polytechnique.fr/): (X and affiliated students)
 
 ~~~
 <img src="/assets/ENS_logo.jpg" style="width: 400px; height: auto; display: inline">

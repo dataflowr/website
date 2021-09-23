@@ -36,6 +36,6 @@
 
 - [More dogs and cats with VGG and resnet](https://github.com/dataflowr/notebooks/blob/master/Module1/01_practical_empty.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module1/01_practical_empty.ipynb)
 
-- Ask your questions on the [forum](https://forum.dataflowr.com/t/lesson-1-machine-learning-pipeline/14)
+<!-- - Ask your questions on the [forum](https://forum.dataflowr.com/t/lesson-1-machine-learning-pipeline/14)
 
-- [solution](https://forum.dataflowr.com/t/link-to-solution-1-more-dogs-and-cats/54) (forum login required)
+- [solution](https://forum.dataflowr.com/t/link-to-solution-1-more-dogs-and-cats/54) (forum login required) -->
