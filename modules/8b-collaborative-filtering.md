@@ -36,4 +36,3 @@
 
 - [implementing word2vec as matrix factorization](https://github.com/dataflowr/notebooks/blob/master/Module8/08_word2vec.ipynb)
 
-- [solutions](https://forum.dataflowr.com/t/links-to-solution-5-collaborative-filtering/73)  (forum login required)

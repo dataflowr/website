@@ -29,8 +29,9 @@
 ## Slides and Practicals
 
 - [slides](https://dataflowr.github.io/slides/module4.html)
-- [notebook](https://github.com/dataflowr/notebooks/blob/master/Module4/04_gradient_descent_optimization_algorithms_empty.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module4/04_gradient_descent_optimization_algorithms_empty.ipynb) Code your optimizers. [solution](https://forum.dataflowr.com/t/link-to-solution-3-optimizers/56)  (forum login required)
+- [notebook](https://github.com/dataflowr/notebooks/blob/master/Module4/04_gradient_descent_optimization_algorithms_empty.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module4/04_gradient_descent_optimization_algorithms_empty.ipynb) Code your optimizers.
 
 ## References
 
-- [Gradient-based optimization](https://drive.google.com/file/d/1e_9W8q9PL20iqOR-pfK89eILc_VtYaw1/view) - A short introduction to optimization in Deep Learning, by Christian S. Perone
+- [An overview of gradient descent optimization algorithms](https://arxiv.org/abs/1609.04747) by Sebastian Ruder
+- [Gradient-based optimization](https://drive.google.com/file/d/1e_9W8q9PL20iqOR-pfK89eILc_VtYaw1/view) A short introduction to optimization in Deep Learning, by Christian S. Perone

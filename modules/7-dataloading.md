@@ -21,4 +21,3 @@
 ## Slides
 
 - [slides](https://dataflowr.github.io/slides/module7.html)
-- Ask your question on the [forum](https://forum.dataflowr.com/) 

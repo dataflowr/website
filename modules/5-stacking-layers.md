@@ -20,4 +20,3 @@
 ## Slides
 
 - [slides](https://dataflowr.github.io/slides/module5.html)
-- Ask your question on the [forum](https://forum.dataflowr.com/) 
