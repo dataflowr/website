@@ -34,5 +34,4 @@
 
 - [notebook](https://github.com/dataflowr/notebooks/blob/master/Module8/08_collaborative_filtering_1M.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module8/08_collaborative_filtering_1M.ipynb) refactoring the code.
 
-- [implementing word2vec as matrix factorization](https://github.com/dataflowr/notebooks/blob/master/Module8/08_word2vec.ipynb)
 
