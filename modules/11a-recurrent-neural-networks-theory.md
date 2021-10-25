@@ -33,5 +33,8 @@
 ## Slides
 
 - [slides](https://dataflowr.github.io/slides/module11.html)
-- Ask your question on the [forum](https://forum.dataflowr.com/) 
+
+## References
+
+- [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) by Christopher Olah
 

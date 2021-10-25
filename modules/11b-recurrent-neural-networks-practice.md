@@ -23,7 +23,7 @@
 
 ## Practicals
 
-- [notebook](https://github.com/dataflowr/notebooks/blob/master/Module11/11_predicitions_RNN_empty.ipynb) (or opened in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module11/11_predicitions_RNN_empty.ipynb)) for predicting engine failure with RNN [solution](https://forum.dataflowr.com/t/links-to-solution-7-predicting-engine-failure-with-rnn/94) (forum login required)
+- [notebook](https://github.com/dataflowr/notebooks/blob/master/Module11/11_predicitions_RNN_empty.ipynb) (or opened in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module11/11_predicitions_RNN_empty.ipynb)) for predicting engine failure with RNN.
 
 ## References
 

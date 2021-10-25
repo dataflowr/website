@@ -38,4 +38,3 @@
 ## Practicals
 
 - [Conditional GAN and InfoGAN](https://github.com/dataflowr/notebooks/blob/master/Module10/10_GAN_double_moon.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module10/10_GAN_double_moon.ipynb)
-- [solution](https://forum.dataflowr.com/t/links-to-solution-6-unsupervised-learning-auto-encoders-and-generative-adversarial-networks/79) (forum login required)
