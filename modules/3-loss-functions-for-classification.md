@@ -38,6 +38,30 @@
 - [slides](https://dataflowr.github.io/slides/module3.html)
 - [notebook](https://github.com/dataflowr/notebooks/blob/master/Module3/03_polynomial_regression.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module3/03_polynomial_regression.ipynb) An explanation of underfitting and overfitting with polynomial regression.
 
+## Minimal working examples
+
+### [`BCELoss`](https://pytorch.org/docs/stable/generated/torch.nn.BCELoss.html#torch.nn.BCELoss)
+```python
+import torch.nn as nn
+m = nn.Sigmoid()
+loss = nn.BCELoss()
+input = torch.randn(3,4,5)
+target = torch.randn(3,4,5)
+loss(m(input), target)
+```
+
+### [`NLLLoss`](https://pytorch.org/docs/stable/generated/torch.nn.NLLLoss.html#torch.nn.NLLLoss) and [`CrossEntropyLoss`](https://pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html#torch.nn.CrossEntropyLoss)
+```python
+import torch.nn as nn
+m = nn.LogSoftmax(dim=1)
+loss1 = nn.NLLLoss()
+loss2 = nn.CrossEntropyLoss()
+C = 4
+input = torch.randn(3,C)
+target = torch.empty(3, dtype=torch.long).random_(0,C) 
+assert loss1(m(input),target) == loss2(input,target)
+```
+
 ## Frequently asked questions
 
 ### Why using the sigmoid as link function for classification?
