@@ -2,7 +2,7 @@
 
 # Homework 1: MLP from scratch
 
-Homework 1 is in the form of a jupyter notebook. You must complete it and submit it on [moodle](https://moodle.ens.psl.eu/course/view.php?id=2758) (for students following the ENS course).
+Homework 1 is in the form of a jupyter notebook. You must complete it and submit it on moodle (for students enrolled on this course).
 
 [The Jupyter notebook](https://github.com/dataflowr/notebooks/blob/master/HW1/hw1_mlp.ipynb)
 

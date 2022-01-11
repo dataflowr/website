@@ -4,15 +4,14 @@
     This site collects resources to learn Deep Learning in the form of
     Modules available through the sidebar on the left.
     As a student, you can walk through the modules at your own pace and
-    interact with others thanks to the associated
-    [digital platforms](#social-interactions).
+    interact with others thanks to the associated [Discord server](https://discord.gg/nZQ3fe3).
     Then we hope you'll become a [contributor](#for_contributors)
-    by adding modules to this site!
+    by improving this site!
 }
 
 ## Curators
 
-[Marc Lelarge](https://www.di.ens.fr/~lelarge/), [Jill-Jênn Vie](https://jill-jenn.net/), [Andrei Bursuc](https://abursuc.github.io/). [Kevin Scaman](https://scaman.wordpress.com/)
+[Marc Lelarge](https://www.di.ens.fr/~lelarge/),  [Andrei Bursuc](https://abursuc.github.io/) with [Jill-Jênn Vie](https://jill-jenn.net/)
 
 ## For students
 
@@ -25,15 +24,13 @@ Pre-requisites:
 
 - [hypothes.is](https://hypothes.is/groups/EzzjE8gb/deep-learning-ens-2020) allows you to annotate this website and the web in general. You'll find some hints for the practicals here!
 -->
-### Social interactions:
-use this [Discord link](https://discord.gg/nZQ3fe3) to join the discussion!
-<!-- - [Forum](https://forum.dataflowr.com/): discussion
-- -->
+
 
 ## For contributors
 
-Join the [GitHub repo dataflowr/website](https://github.com/dataflowr/website) and make a pull request. [What are pull requests?](https://yangsu.github.io/pull-request-tutorial/)
+Join the [GitHub repo dataflowr](https://github.com/dataflowr) and make a pull request. [What are pull requests?](https://yangsu.github.io/pull-request-tutorial/)
 
+Thanks to [Daniel Huynh](https://github.com/dhuynh95), [Eric Daoud](https://github.com/ericdaat), [Simon Coste](https://github.com/SimonCoste)
 <!-- to be updated
 ## Modules
 

@@ -8,7 +8,7 @@
            style="width: 620px; height: auto; display: inline">
 ~~~
 
-Homework 2 is in the form of a jupyter notebook. You must complete it and submit it on [moodle](https://moodle.ens.psl.eu/mod/assign/view.php?id=4651) (for students following the ENS course).
+Homework 2 is in the form of a jupyter notebook. You must complete it and submit it on moodle (for students enrolled on this course).
 
 [The Jupyter notebook](https://github.com/dataflowr/notebooks/blob/master/HW2/HW2_CAM_Adversarial.ipynb)
 
