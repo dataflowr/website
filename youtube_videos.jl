@@ -26,6 +26,7 @@ videos = Dict(
               "resnets" => "LdJV4oHgO28",
               "graph1" => "Ch0Iz8BJn98",
               "graph2" => "o1CfrsSTRAU",
-              "graph3" => "ZD0zwjEQhz8"
+              "graph3" => "ZD0zwjEQhz8",
+              "graphinv" => "J4iYhmXLHrM"
 
 )
