@@ -26,8 +26,10 @@
 
 ## Slides and Notebook
 
+
+- [notebook](https://github.com/dataflowr/notebooks/blob/master/Module2/02b_linear_reg.ipynb) used in the video for the linear regression. If you want to open it in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module2/02b_linear_reg.ipynb)
+- Bonus: [JAX](https://jax.readthedocs.io/en/latest/index.html) implementation of the linear regression [notebook](https://github.com/dataflowr/notebooks/blob/master/Module2/linear_regression_jax.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module2/linear_regression_jax.ipynb)
 - [backprop slide](https://raw.githubusercontent.com/dataflowr/slides/master/backprop.pdf) (used for the practical below)
-- [notebook](https://github.com/dataflowr/notebooks/blob/master/Module2/02b_linear_reg.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module2/02b_linear_reg.ipynb)
 
 ## Practicals
 
