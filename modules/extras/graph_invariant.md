@@ -9,3 +9,4 @@
 - [Slides](Prairie.pdf)
 - [code](https://github.com/mlelarge/graph_neural_net)
 - [Paper](https://openreview.net/forum?id=lxHgXYN4bwl)
+- Related post: [Invariant and equivariant layers with applications to GNN, PointNet and Transformers](https://dataflowr.github.io/website/modules/extras/invariant_equivariant/)
