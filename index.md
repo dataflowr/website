@@ -20,6 +20,18 @@ Pre-requisites:
 - Mathematics: basics of linear algebra, probability, differential calculus and optimization
 - Programming: basic proficiency Python
 
+**Super fast track** to learn the basics of deep learning from scratch:
+- Have a look at the [slides](https://dataflowr.github.io/slides/module1.html) of [Module 1: Introduction & General Overview](./modules/1-intro-general-overview)
+- Run the [notebook](https://github.com/dataflowr/notebooks/blob/master/Module2/02a_basics.ipynb) (or in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module2/02a_basics.ipynb)) of [Module 2a: Pytorch Tensors](./modules/2a-pytorch-tensors)
+- Run the [notebook](https://github.com/dataflowr/notebooks/blob/master/Module2/02b_linear_reg.ipynb) (or in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module2/02b_linear_reg.ipynb)) of [Module 2b: Automatic Differentiation](./modules/2b-automatic-differentiation)
+- Check the [Minimal working examples](./modules/3-loss-functions-for-classification/#minimal_working_examples) of [Module 3: Loss functions for classification](./modules/3-loss-functions-for-classification). If you do not understand, have a look at the [slides](https://dataflowr.github.io/slides/module3.html).
+- Have a look at the [slides](https://dataflowr.github.io/slides/module4.html) of [Module 4: Optimization for Deep Learning](./modules/4-optimization-for-deep-learning)
+- Try playback speed 1.5 for the [video](https://youtu.be/OiyZXdnLHcI?t=149) from [Module 5: Stacking layers](./modules/5-stacking-layers).
+- Run the [notebook](https://github.com/dataflowr/notebooks/blob/master/Module6/06_convolution_digit_recognizer.ipynb) (or in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module6/06_convolution_digit_recognizer.ipynb)) of [Module 6: Convolutional Neural Network](./modules/6-convolutional-neural-network)
+- Try playback speed 2 for the [video](https://youtu.be/vm-ZusIUkiY?t=133) from [Module 7: Dataloading](./modules/7-dataloading)
+- Have a look at the [slides](https://dataflowr.github.io/slides/module8a.html) of [Module 8a: Embedding layers](./modules/8a-embedding-layers)
+- Well done! Now you have time to enjoy...
+
 <!-- ### Annotation tool
 
 - [hypothes.is](https://hypothes.is/groups/EzzjE8gb/deep-learning-ens-2020) allows you to annotate this website and the web in general. You'll find some hints for the practicals here!
@@ -50,12 +62,8 @@ Thanks to [Daniel Huynh](https://github.com/dhuynh95), [Eric Daoud](https://gith
 - [Module 10b: Recurrent Neural Networks practice](./modules/10b-recurrent-neural-networks-practice)
 -->
 
-## Evaluation
 
-Materials from this site is used for courses at ENS and X. To validate these courses, please connect to the appropriate moodle:
-
-- [ENS Moodle](https://moodle.ens.psl.eu/): (ENS and affiliated students)
-- [X Moodle](https://moodle.polytechnique.fr/): (X and affiliated students)
+Materials from this site is used for courses at ENS and X. 
 
 ~~~
 <img src="/assets/ENS_logo.jpg" style="width: 400px; height: auto; display: inline">
