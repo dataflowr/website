@@ -30,7 +30,7 @@ Pre-requisites:
 - Run the [notebook](https://github.com/dataflowr/notebooks/blob/master/Module6/06_convolution_digit_recognizer.ipynb) (or in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module6/06_convolution_digit_recognizer.ipynb)) of [Module 6: Convolutional Neural Network](./modules/6-convolutional-neural-network)
 - Try playback speed 2 for the [video](https://youtu.be/vm-ZusIUkiY?t=133) from [Module 7: Dataloading](./modules/7-dataloading)
 - Have a look at the [slides](https://dataflowr.github.io/slides/module8a.html) of [Module 8a: Embedding layers](./modules/8a-embedding-layers)
-- Well done! Now you have time to enjoy...
+- Well done! Now you have time to enjoy deep learning!
 
 <!-- ### Annotation tool
 
