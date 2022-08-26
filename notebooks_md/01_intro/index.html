@@ -1,0 +1,351 @@
+<!doctype html> <html lang=en > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/website/libs/katex/katex.min.css"> <link rel=stylesheet  href="/website/libs/highlight/github.min.css"> <link rel=stylesheet  href="/website/css/franklin.css"> <link rel=stylesheet  href="/website/css/poole_hyde.css"> <link rel=stylesheet  href="/website/css/custom.css"> <style> html {font-size: 17px;} .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;} @media (min-width: 940px) { .franklin-content {width: 100%; margin-left: auto; margin-right: auto;} } @media (max-width: 768px) { .franklin-content {padding-left: 6%; padding-right: 6%;} } </style> <link rel=icon  href="/website/assets/favicon.png"> <title>Dataflowr - Deep Learning DIY</title> <div class=sidebar > <div class="container sidebar-sticky"> <div class=sidebar-about > <img src="/website/assets/dataflowr_violet_plain_square.png" style="width: 120px; height: auto; display: inline"> <img src="/website/assets/favicon.png" style="margin-left:1em; position:relative;left:0px; top:-30px; width: 60px; height: auto; display: inline"> <h1 style="font-size:1em; opacity: 0.95;"><a href="/website/">Deep Learning DIY</a></h1> </div> <nav class=sidebar-nav > <a class="sidebar-nav-item " href="/website/modules/0-sotfware-installation"> <b>Module 0</b> - <em> Software installation</em> </a> <a class="sidebar-nav-item " href="/website/modules/1-intro-general-overview"> <b>Module 1</b> - <em>Introduction & General Overview</em> </a> <a class="sidebar-nav-item " href="/website/modules/2a-pytorch-tensors"> <b>Module 2a</b> - <em>PyTorch tensors</em> </a> <a class="sidebar-nav-item " href="/website/modules/2b-automatic-differentiation"> <b>Module 2b</b> - <em>Automatic differentiation</em> </a> <a class="sidebar-nav-item " href="/website/modules/3-loss-functions-for-classification"> <b>Module 3</b> - <em>Loss functions for classification</em> </a> <a class="sidebar-nav-item " href="/website/modules/4-optimization-for-deep-learning"> <b>Module 4</b> - <em>Optimization for DL</em> </a> <a class="sidebar-nav-item " href="/website/modules/5-stacking-layers"> <b>Module 5</b> - <em>Stacking layers</em> </a> <a class="sidebar-nav-item " href="/website/modules/6-convolutional-neural-network"> <b>Module 6</b> - <em>Convolutional neural network</em> </a> <a class="sidebar-nav-item " href="/website/modules/7-dataloading"> <b>Module 7</b> - <em>Dataloading</em> </a> <a class="sidebar-nav-item " href="/website/modules/8a-embedding-layers"> <b>Module 8a</b> - <em>Embedding layers</em> </a> <a class="sidebar-nav-item " href="/website/modules/8b-collaborative-filtering"> <b>Module 8b</b> - <em>Collaborative filtering</em> </a> <a class="sidebar-nav-item " href="/website/modules/8c-word2vec"> <b>Module 8c</b> - <em>Word2vec</em> </a> <a class="sidebar-nav-item " href="/website/modules/9-autoencoders"> <b>Module 9</b> - <em>Autoencoders</em> </a> <a class="sidebar-nav-item " href="/website/modules/10-generative-adversarial-networks"> <b>Module 10</b> - <em>Generative adversarial networks</em> </a> <a class="sidebar-nav-item " href="/website/modules/11a-recurrent-neural-networks-theory"> <b>Module 11a</b> - <em>Recurrent Neural Networks (theory)</em> </a> <a class="sidebar-nav-item " href="/website/modules/11b-recurrent-neural-networks-practice"> <b>Module 11b</b> - <em>RNN in practice</em> </a> <a class="sidebar-nav-item " href="/website/modules/11c-batches-with-sequences"> <b>Module 11c</b> - <em>Batches with sequences in Pytorch</em> </a> <a class="sidebar-nav-item " href="/website/modules/12-intro-julia"> <b>Module 12</b> - <em>Intro to Julia: Autodiff with dual numbers</em> </a> <a class="sidebar-nav-item " href="/website/modules/13-siamese"> <b>Module 13</b> - <em>Siamese Networks and Representation Learning</em> </a> <a class="sidebar-nav-item " href="/website/modules/14a-depth"> <b>Module 14a</b> - <em>The Benefits of Depth</em> </a> <a class="sidebar-nav-item " href="/website/modules/14b-depth"> <b>Module 14b</b> - <em>The Problems with Depth</em> </a> <a class="sidebar-nav-item " href="/website/modules/15-dropout"> <b>Module 15</b> - <em>Dropout</em> </a> <a class="sidebar-nav-item " href="/website/modules/16-batchnorm"> <b>Module 16</b> - <em>Batchnorm</em> </a> <a class="sidebar-nav-item " href="/website/modules/17-resnets"> <b>Module 17</b> - <em>Resnets</em> </a> <!-- <div class=week >Unit 7</div>--> <div class=week >Homeworks</div> <a class="sidebar-nav-item " href="/website/homework/1-mlp-from-scratch"> <b>Homework 1</b> - <em>MLP from scratch</em> </a> <a class="sidebar-nav-item " href="/website/homework/2-CAM-adversarial"> <b>Homework 2</b> - <em>Class Activation Map and adversarial examples</em> </a> <a class="sidebar-nav-item " href="/website/homework/3-VAE"> <b>Homework 3</b> - <em>VAE for MNIST clustering and generation</em> </a> <div class=week >Bonus</div> <a class="sidebar-nav-item " href="/website/modules/graph0"> <b>Module</b> - <em>Deep learning on graphs</em> </a> <a class="sidebar-nav-item " href="/website/modules/graph1"> <b>Graph</b> - <em>Node embeddings</em> </a> <a class="sidebar-nav-item " href="/website/modules/graph2"> <b>Graph</b> - <em>Signal processing on graphs</em> </a> <a class="sidebar-nav-item " href="/website/modules/graph3"> <b>Graph</b> - <em> Graph embeddings and GNNs</em> </a> <a class="sidebar-nav-item " href="/website/modules/extras/GCN_inductivebias_spectral"> <b>Post</b> - <em>Spectral GCN</em> </a> <a class="sidebar-nav-item " href="/website/modules/extras/Convolutions_first"> <b>Post</b> - <em>Convolutions from first principles</em> </a> <a class="sidebar-nav-item " href="/website/modules/extras/invariant_equivariant"> <b>Post</b> - <em>Invariant and equivariant networks</em> </a> <a class="sidebar-nav-item " href="/website/modules/extras/graph_invariant"> <b>Graph</b> - <em>Exploiting Graph Invariants in Deep Learning</em> </a> <div class=week >Guest Lectures</div> <a class="sidebar-nav-item " href="/website/modules/privacy-preserving-ML"> <b>Privacy Preserving ML</b> - <em>Daniel Huynh</em> </a> </nav> </div> </div> <div class="content container"> <div class=franklin-content ><p><a href="https://dataflowr.github.io/website/"><img src="https://raw.githubusercontent.com/dataflowr/website/master/_assets/dataflowr_logo.png" alt=Dataflowr  /></a></p> <p>You are viewing the static version of the notebook, you can get the <a href="https://github.com/dataflowr/notebooks/blob/master/Module1/01_intro.ipynb">code &#40;GitHub&#41;</a> or run it in <a href="https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module1/01_intro.ipynb">colab</a></p> <h1 id=a_hrefhttpsdataflowrgithubiowebsitemodules1-intro-general-overviewmodule_1_using_cnn_for_dogs_vs_cats ><a href="#a_hrefhttpsdataflowrgithubiowebsitemodules1-intro-general-overviewmodule_1_using_cnn_for_dogs_vs_cats" class=header-anchor ><a href="https://dataflowr.github.io/website/modules/1-intro-general-overview/">Module 1</a>: Using CNN for dogs vs cats</a></h1> <p>To illustrate the Deep Learning pipeline seen in <a href="https://dataflowr.github.io/website/modules/1-intro-general-overview/">Module 1</a>, we are going to use a pretrained model to enter the <a href="https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition">Dogs vs Cats</a> competition at Kaggle.</p> <p><a href="https://youtu.be/ZhC-DIrCe6A?t&#61;1175">Video timestamp</a></p> <p>There are 25,000 labelled dog and cat photos available for training, and 12,500 in the test set that we have to try to label for this competition. According to the Kaggle web-site, when this competition was launched &#40;end of 2013&#41;: <em>&quot;<strong>State of the art</strong>: The current literature suggests machine classifiers can score above 80&#37; accuracy on this task&quot;</em>. So if you can beat 80&#37;, then you will be at the cutting edge as of 2013&#33;</p> <h2 id=imports ><a href="#imports" class=header-anchor >Imports</a></h2> <pre><code class="python hljs"><span class=hljs-keyword >import</span> numpy <span class=hljs-keyword >as</span> np
+<span class=hljs-keyword >import</span> matplotlib.pyplot <span class=hljs-keyword >as</span> plt
+<span class=hljs-keyword >import</span> os
+<span class=hljs-keyword >import</span> torch
+<span class=hljs-keyword >import</span> torch.nn <span class=hljs-keyword >as</span> nn
+<span class=hljs-keyword >import</span> torchvision
+<span class=hljs-keyword >from</span> torchvision <span class=hljs-keyword >import</span> models,transforms,datasets
+<span class=hljs-keyword >import</span> time
+%matplotlib inline</code></pre> <p>Here you see that the latest version of PyTorch is installed by default.</p> <pre><code class="python hljs">torch.__version__</code></pre>
+<pre><code class="python hljs"><span class=hljs-keyword >import</span> sys
+sys.version</code></pre>
+<p>Check if GPU is available and if not change the <a href="https://jovianlin.io/pytorch-with-gpu-in-google-colab/">runtime</a>.</p>
+<pre><code class="python hljs">device = torch.device(<span class=hljs-string >&quot;cuda:0&quot;</span> <span class=hljs-keyword >if</span> torch.cuda.is_available() <span class=hljs-keyword >else</span> <span class=hljs-string >&quot;cpu&quot;</span>)
+
+<span class=hljs-built_in >print</span>(<span class=hljs-string >&#x27;Using gpu: %s &#x27;</span> % torch.cuda.is_available())</code></pre>
+<h2 id=downloading_the_data ><a href="#downloading_the_data" class=header-anchor >Downloading the data</a></h2>
+<p>You can download the full dataset from Kaggle directly.</p>
+<p>Alternatively, Jeremy Howard &#40;fast.ai&#41; provides a direct link to the catvsdogs <a href="http://files.fast.ai/data/examples/">dataset</a>. He&#39;s separated the cats and dogs into separate folders and created a validation folder as well.</p>
+<p>For test purpose &#40;or if you run on cpu&#41;, you should use the &#40;small&#41; sample directory.</p>
+<pre><code class="python hljs">%mkdir data
+<span class=hljs-comment ># the following line should be modified if you run the notebook on your computer</span>
+<span class=hljs-comment ># change directory to data where you will store the dataset</span>
+%cd /content/data/
+!wget http://files.fast.ai/data/examples/dogscats.tgz</code></pre>
+<pre><code class="python hljs">!tar -zxvf dogscats.tgz</code></pre>
+<pre><code class="python hljs">%ls</code></pre>
+<pre><code class="python hljs">%cd dogscats/
+%ls</code></pre>
+<p>The structure of the sub-folders inside the folder <code>dogscats</code> will be important for what follows:</p>
+<pre><code class="bash hljs">.
+├── test1 <span class=hljs-comment ># contains 12500 images of cats and dogs</span>
+├── train
+|   └── cats <span class=hljs-comment ># contains 11500 images of cats</span>
+|   └── dogs <span class=hljs-comment ># contains 11500 images of dogs</span>
+├── valid
+|   └── cats <span class=hljs-comment ># contains 1000 images of cats</span>
+|   └── dogs <span class=hljs-comment ># contains 1000 images of dogs</span>
+├── sample
+|   └── train
+|       └── cats <span class=hljs-comment ># contains 8 images of cats</span>
+|       └── dogs <span class=hljs-comment ># contains 8 images of dogs    </span>
+|   └── valid 
+|       └── cats <span class=hljs-comment ># contains 4 images of cats</span>
+|       └── dogs <span class=hljs-comment ># contains 4 images of dogs    </span>
+├── models <span class=hljs-comment ># empty folder</span></code></pre>
+<p>You see that the 12 500 images of the test are in the <code>test1</code> sub-folder; the dataset of 25 000 labelled images has been split into a train set and a validation set.</p>
+<p>The sub-folder <code>sample</code> is here only to make sure the code is running properly on a very small dataset.</p>
+<h2 id=data_processing ><a href="#data_processing" class=header-anchor >Data processing</a></h2>
+<pre><code class="python hljs">%cd ..</code></pre>
+<p>Below, we give the path where the data is stored. If you are running this code on your computer, you should modifiy this cell.</p>
+<p><a href="https://youtu.be/ZhC-DIrCe6A?t&#61;1550">Video timestamp</a></p>
+<pre><code class="python hljs">data_dir = <span class=hljs-string >&#x27;/content/data/dogscats&#x27;</span></code></pre>
+<p><code>datasets</code> is a class of the <code>torchvision</code>| package &#40;see <a href="http://pytorch.org/docs/master/torchvision/datasets.html">torchvision.datasets</a>&#41; and deals with data loading. It integrates a multi-threaded loader that fetches images from the disk, groups them in mini-batches and serves them continously to the GPU right after each <em>forward</em>/<em>backward</em> pass through the network.</p>
+<p>Images needs a bit of preparation before passing them throught the network. They need to have all the same size <span class=katex ><span class=katex-mathml ><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>224</mn><mo>×</mo><mn>224</mn><mo>×</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">224\times 224 \times 3</annotation></semantics></math></span><span class=katex-html  aria-hidden=true ><span class=base ><span class=strut  style="height:0.72777em;vertical-align:-0.08333em;"></span><span class=mord >2</span><span class=mord >2</span><span class=mord >4</span><span class=mspace  style="margin-right:0.2222222222222222em;"></span><span class=mbin >×</span><span class=mspace  style="margin-right:0.2222222222222222em;"></span></span><span class=base ><span class=strut  style="height:0.72777em;vertical-align:-0.08333em;"></span><span class=mord >2</span><span class=mord >2</span><span class=mord >4</span><span class=mspace  style="margin-right:0.2222222222222222em;"></span><span class=mbin >×</span><span class=mspace  style="margin-right:0.2222222222222222em;"></span></span><span class=base ><span class=strut  style="height:0.64444em;vertical-align:0em;"></span><span class=mord >3</span></span></span></span> plus some extra formatting done below by the normalize transform &#40;explained later&#41;.</p>
+<pre><code class="python hljs">normalize = transforms.Normalize(mean=[<span class=hljs-number >0.485</span>, <span class=hljs-number >0.456</span>, <span class=hljs-number >0.406</span>], std=[<span class=hljs-number >0.229</span>, <span class=hljs-number >0.224</span>, <span class=hljs-number >0.225</span>])
+
+imagenet_format = transforms.Compose([
+                transforms.CenterCrop(<span class=hljs-number >224</span>),
+                transforms.ToTensor(),
+                normalize,
+            ])</code></pre>
+<pre><code class="python hljs">dsets = {x: datasets.ImageFolder(os.path.join(data_dir, x), imagenet_format)
+         <span class=hljs-keyword >for</span> x <span class=hljs-keyword >in</span> [<span class=hljs-string >&#x27;train&#x27;</span>, <span class=hljs-string >&#x27;valid&#x27;</span>]}</code></pre>
+<pre><code class="python hljs">os.path.join(data_dir,<span class=hljs-string >&#x27;train&#x27;</span>)</code></pre>
+<p>Interactive help on jupyter notebook thanks to <code>?</code></p>
+<pre><code class="python hljs">?datasets.ImageFolder</code></pre>
+<p>We see that <code>datasets.ImageFolder</code> has attributes: classes, class<em>to</em>idx, imgs.</p>
+<p>Let see what they are?</p>
+<pre><code class="python hljs">dsets[<span class=hljs-string >&#x27;train&#x27;</span>].classes</code></pre>
+<p>The name of the classes are directly inferred from the structure of the folder:</p>
+<pre><code class="bash hljs">├── train
+|   └── cats
+|   └── dogs</code></pre>
+<pre><code class="python hljs">dsets[<span class=hljs-string >&#x27;train&#x27;</span>].class_to_idx</code></pre>
+<p>The label 0 will correspond to cats and 1 to dogs.</p>
+<p>Below, you see that the first 5 imgs are pairs &#40;location<em>of</em>the_image, label&#41;: </p>
+<pre><code class="python hljs">dsets[<span class=hljs-string >&#x27;train&#x27;</span>].imgs[:<span class=hljs-number >5</span>]</code></pre>
+<pre><code class="python hljs">dset_sizes = {x: <span class=hljs-built_in >len</span>(dsets[x]) <span class=hljs-keyword >for</span> x <span class=hljs-keyword >in</span> [<span class=hljs-string >&#x27;train&#x27;</span>, <span class=hljs-string >&#x27;valid&#x27;</span>]}
+dset_sizes</code></pre>
+<p>As expected we have 23 000 images in the training set and 2 000 in the validation set.</p>
+<p>Below, we store the classes in the variable <code>dset_classes</code>:</p>
+<pre><code class="python hljs">dset_classes = dsets[<span class=hljs-string >&#x27;train&#x27;</span>].classes</code></pre>
+<p>The <code>torchvision</code> packages allows complex pre-processing/transforms of the input data &#40;<em>e.g.</em> normalization, cropping, flipping, jittering&#41;. A sequence of transforms can be grouped in a pipeline with the help of the <code>torchvision.transforms.Compose</code> function, see <a href="http://pytorch.org/docs/master/torchvision/transforms.html">torchvision.transforms</a></p>
+<p>The magic help <code>?</code> allows you to retrieve function you defined and forgot&#33;</p>
+<pre><code class="python hljs">?imagenet_format</code></pre>
+<p>Where is this normalization coming from?</p>
+<p>As explained in the <a href="https://pytorch.org/docs/stable/torchvision/models.html">PyTorch doc</a>, you will use a pretrained model. All pre-trained models expect input images normalized in the same way, i.e. mini-batches of 3-channel RGB images of shape &#40;3 x H x W&#41;, where H and W are expected to be at least 224. The images have to be loaded in to a range of &#91;0, 1&#93; and then normalized using <code>mean &#61; &#91;0.485, 0.456, 0.406&#93;</code> and <code>std &#61; &#91;0.229, 0.224, 0.225&#93;</code>.</p>
+<pre><code class="python hljs">loader_train = torch.utils.data.DataLoader(dsets[<span class=hljs-string >&#x27;train&#x27;</span>], batch_size=<span class=hljs-number >64</span>, shuffle=<span class=hljs-literal >True</span>, num_workers=<span class=hljs-number >6</span>)</code></pre>
+<pre><code class="python hljs">?torch.utils.data.DataLoader</code></pre>
+<pre><code class="python hljs">loader_valid = torch.utils.data.DataLoader(dsets[<span class=hljs-string >&#x27;valid&#x27;</span>], batch_size=<span class=hljs-number >5</span>, shuffle=<span class=hljs-literal >False</span>, num_workers=<span class=hljs-number >6</span>)</code></pre>
+<p>Try to understand what the following cell is doing?</p>
+<pre><code class="python hljs">count = <span class=hljs-number >1</span>
+<span class=hljs-keyword >for</span> data <span class=hljs-keyword >in</span> loader_valid:
+    <span class=hljs-built_in >print</span>(count, end=<span class=hljs-string >&#x27;,&#x27;</span>)
+    <span class=hljs-keyword >if</span> count == <span class=hljs-number >1</span>:
+        inputs_try,labels_try = data
+    count +=<span class=hljs-number >1</span></code></pre>
+<pre><code class="python hljs">labels_try</code></pre>
+<pre><code class="python hljs">inputs_try.shape</code></pre>
+<p>Got it: the validation dataset contains 2 000 images, hence this is 400 batches of size 5. <code>labels_try</code> contains the labels of the first batch and <code>inputs_try</code> the images of the first batch.</p>
+<p>What is an image for your computer?</p>
+<pre><code class="python hljs">inputs_try[<span class=hljs-number >0</span>]</code></pre>
+<p>A 3-channel RGB image is of shape &#40;3 x H x W&#41;. Note that entries can be negative because of the normalization.</p>
+<p>A small function to display images:</p>
+<pre><code class="python hljs"><span class=hljs-keyword >def</span> <span class="hljs-title function_">imshow</span>(<span class=hljs-params >inp, title=<span class=hljs-literal >None</span></span>):
+<span class=hljs-comment >#   Imshow for Tensor.</span>
+    inp = inp.numpy().transpose((<span class=hljs-number >1</span>, <span class=hljs-number >2</span>, <span class=hljs-number >0</span>))
+    mean = np.array([<span class=hljs-number >0.485</span>, <span class=hljs-number >0.456</span>, <span class=hljs-number >0.406</span>])
+    std = np.array([<span class=hljs-number >0.229</span>, <span class=hljs-number >0.224</span>, <span class=hljs-number >0.225</span>])
+    inp = np.clip(std * inp + mean, <span class=hljs-number >0</span>,<span class=hljs-number >1</span>)
+    plt.imshow(inp)
+    <span class=hljs-keyword >if</span> title <span class=hljs-keyword >is</span> <span class=hljs-keyword >not</span> <span class=hljs-literal >None</span>:
+        plt.title(title)</code></pre>
+<pre><code class="python hljs"><span class=hljs-comment ># Make a grid from batch from the validation data</span>
+out = torchvision.utils.make_grid(inputs_try)
+
+imshow(out, title=[dset_classes[x] <span class=hljs-keyword >for</span> x <span class=hljs-keyword >in</span> labels_try])</code></pre>
+<pre><code class="python hljs"><span class=hljs-comment ># Get a batch of training data</span>
+inputs, classes = <span class=hljs-built_in >next</span>(<span class=hljs-built_in >iter</span>(loader_train))
+
+n_images = <span class=hljs-number >8</span>
+
+<span class=hljs-comment ># Make a grid from batch</span>
+out = torchvision.utils.make_grid(inputs[<span class=hljs-number >0</span>:n_images])
+
+imshow(out, title=[dset_classes[x] <span class=hljs-keyword >for</span> x <span class=hljs-keyword >in</span> classes[<span class=hljs-number >0</span>:n_images]])</code></pre>
+<h2 id=creating_vgg_model ><a href="#creating_vgg_model" class=header-anchor >Creating VGG Model</a></h2>
+<p>The torchvision module comes with a zoo of popular CNN architectures which are already trained on <a href="http://www.image-net.org/">ImageNet</a> &#40;1.2M training images&#41;. When called the first time, if <code>pretrained&#61;True</code> the model is fetched over the internet and downloaded to <code>~/.torch/models</code>. For next calls, the model will be directly read from there.</p>
+<p><a href="https://youtu.be/ZhC-DIrCe6A?t&#61;2451">Video timestamp</a></p>
+<pre><code class="python hljs">model_vgg = models.vgg16(pretrained=<span class=hljs-literal >True</span>)</code></pre>
+<p>We will first use VGG Model without any modification. In order to interpret the results, we need to import the 1000 ImageNet categories, available at: <a href="https://s3.amazonaws.com/deep-learning-models/image-models/imagenet_class_index.json">https://s3.amazonaws.com/deep-learning-models/image-models/imagenet<em>class</em>index.json</a></p>
+<pre><code class="python hljs">!wget https://s3.amazonaws.com/deep-learning-models/image-models/imagenet_class_index.json</code></pre>
+<pre><code class="python hljs"><span class=hljs-keyword >import</span> json
+
+fpath = <span class=hljs-string >&#x27;/content/data/imagenet_class_index.json&#x27;</span>
+
+<span class=hljs-keyword >with</span> <span class=hljs-built_in >open</span>(fpath) <span class=hljs-keyword >as</span> f:
+    class_dict = json.load(f)
+dic_imagenet = [class_dict[<span class=hljs-built_in >str</span>(i)][<span class=hljs-number >1</span>] <span class=hljs-keyword >for</span> i <span class=hljs-keyword >in</span> <span class=hljs-built_in >range</span>(<span class=hljs-built_in >len</span>(class_dict))]</code></pre>
+<pre><code class="python hljs">dic_imagenet[:<span class=hljs-number >4</span>]</code></pre>
+<pre><code class="python hljs">inputs_try , labels_try = inputs_try.to(device), labels_try.to(device)
+
+model_vgg = model_vgg.to(device)</code></pre>
+<pre><code class="python hljs">outputs_try = model_vgg(inputs_try)</code></pre>
+<pre><code class="python hljs">outputs_try</code></pre>
+<pre><code class="python hljs">outputs_try.shape</code></pre>
+<p>To translate the outputs of the network into &#39;probabilities&#39;, we pass it through a <a href="https://en.wikipedia.org/wiki/Softmax_function">Softmax function</a></p>
+<pre><code class="python hljs">m_softm = nn.Softmax(dim=<span class=hljs-number >1</span>)
+probs = m_softm(outputs_try)
+vals_try,preds_try = torch.<span class=hljs-built_in >max</span>(probs,dim=<span class=hljs-number >1</span>)</code></pre>
+<p>Let check, that we obtain a probability&#33;</p>
+<pre><code class="python hljs">torch.<span class=hljs-built_in >sum</span>(probs,<span class=hljs-number >1</span>)</code></pre>
+<pre><code class="python hljs">vals_try</code></pre>
+<pre><code class="python hljs"><span class=hljs-built_in >print</span>([dic_imagenet[i] <span class=hljs-keyword >for</span> i <span class=hljs-keyword >in</span> preds_try.data])</code></pre>
+<pre><code class="python hljs">out = torchvision.utils.make_grid(inputs_try.data.cpu())
+
+imshow(out, title=[dset_classes[x] <span class=hljs-keyword >for</span> x <span class=hljs-keyword >in</span> labels_try.data.cpu()])</code></pre>
+<h3 id=modifying_the_last_layer_and_setting_the_gradient_false_to_all_layers ><a href="#modifying_the_last_layer_and_setting_the_gradient_false_to_all_layers" class=header-anchor >Modifying the last layer and setting the gradient false to all layers</a></h3>
+<p><a href="https://youtu.be/ZhC-DIrCe6A?t&#61;2755">Video timestamp</a></p>
+<pre><code class="python hljs"><span class=hljs-built_in >print</span>(model_vgg)</code></pre>
+<p>We&#39;ll learn about what these different blocks do later in the course. For now, it&#39;s enough to know that:</p>
+<ul>
+<li><p>Convolution layers are for finding small to medium size patterns in images – analyzing the images locally</p>
+
+<li><p>Dense &#40;fully connected&#41; layers are for combining patterns across an image – analyzing the images globally</p>
+
+<li><p>Pooling layers downsample – in order to reduce image size and to improve invariance of learned features</p>
+
+</ul>
+<p><img src="https://dataflowr.github.io/notebooks/Module1/img/vgg16.png" alt=vgg16  /></p>
+<p>In this practical example, our goal is to use the already trained model and just change the number of output classes. To this end we replace the last <code>nn.Linear</code> layer trained for 1000 classes to ones with 2 classes. In order to freeze the weights of the other layers during training, we set the field <code>required_grad&#61;False</code>. In this manner no gradient will be computed for them during backprop and hence no update in the weights. Only the weights for the 2 class layer will be updated.</p>
+<pre><code class="python hljs"><span class=hljs-keyword >for</span> param <span class=hljs-keyword >in</span> model_vgg.parameters():
+    param.requires_grad = <span class=hljs-literal >False</span>
+model_vgg.classifier._modules[<span class=hljs-string >&#x27;6&#x27;</span>] = nn.Linear(<span class=hljs-number >4096</span>, <span class=hljs-number >2</span>)
+model_vgg.classifier._modules[<span class=hljs-string >&#x27;7&#x27;</span>] = torch.nn.LogSoftmax(dim = <span class=hljs-number >1</span>)</code></pre>
+<p>PyTorch documentation for <a href="https://pytorch.org/docs/stable/nn.html#logsoftmax">LogSoftmax</a></p>
+<pre><code class="python hljs"><span class=hljs-built_in >print</span>(model_vgg.classifier)</code></pre>
+<p>We load the model on GPU.</p>
+<pre><code class="python hljs">model_vgg = model_vgg.to(device)</code></pre>
+<h2 id=training_the_fully_connected_module ><a href="#training_the_fully_connected_module" class=header-anchor >Training the fully connected module</a></h2>
+<p><a href="https://youtu.be/ZhC-DIrCe6A?t&#61;2990">Video timestamp</a></p>
+<h3 id=creating_loss_function_and_optimizer ><a href="#creating_loss_function_and_optimizer" class=header-anchor >Creating loss function and optimizer</a></h3>
+<p>PyTorch documentation for <a href="https://pytorch.org/docs/stable/nn.html#nllloss">NLLLoss</a> and the <a href="https://pytorch.org/docs/stable/optim.html#module-torch.optim">torch.optim module</a></p>
+<pre><code class="python hljs">criterion = nn.NLLLoss()
+lr = <span class=hljs-number >0.001</span>
+optimizer_vgg = torch.optim.SGD(model_vgg.classifier[<span class=hljs-number >6</span>].parameters(),lr = lr)</code></pre>
+<h3 id=training_the_model ><a href="#training_the_model" class=header-anchor >Training the model</a></h3>
+<pre><code class="python hljs"><span class=hljs-keyword >def</span> <span class="hljs-title function_">train_model</span>(<span class=hljs-params >model,dataloader,size,epochs=<span class=hljs-number >1</span>,optimizer=<span class=hljs-literal >None</span></span>):
+    model.train()
+    
+    <span class=hljs-keyword >for</span> epoch <span class=hljs-keyword >in</span> <span class=hljs-built_in >range</span>(epochs):
+        running_loss = <span class=hljs-number >0.0</span>
+        running_corrects = <span class=hljs-number >0</span>
+        <span class=hljs-keyword >for</span> inputs,classes <span class=hljs-keyword >in</span> dataloader:
+            inputs = inputs.to(device)
+            classes = classes.to(device)
+            outputs = model(inputs)
+            loss = criterion(outputs,classes)
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+            _,preds = torch.<span class=hljs-built_in >max</span>(outputs.data,<span class=hljs-number >1</span>)
+            <span class=hljs-comment ># statistics</span>
+            running_loss += loss.data.item()
+            running_corrects += torch.<span class=hljs-built_in >sum</span>(preds == classes.data)
+        epoch_loss = running_loss / size
+        epoch_acc = running_corrects.data.item() / size
+        <span class=hljs-built_in >print</span>(<span class=hljs-string >&#x27;Loss: {:.4f} Acc: {:.4f}&#x27;</span>.<span class=hljs-built_in >format</span>(
+                     epoch_loss, epoch_acc))</code></pre>
+<pre><code class="python hljs">%%time
+train_model(model_vgg,loader_train,size=dset_sizes[<span class=hljs-string >&#x27;train&#x27;</span>],epochs=<span class=hljs-number >2</span>,optimizer=optimizer_vgg)</code></pre>
+<pre><code class="python hljs"><span class=hljs-keyword >def</span> <span class="hljs-title function_">test_model</span>(<span class=hljs-params >model,dataloader,size</span>):
+    model.<span class=hljs-built_in >eval</span>()
+    predictions = np.zeros(size)
+    all_classes = np.zeros(size)
+    all_proba = np.zeros((size,<span class=hljs-number >2</span>))
+    i = <span class=hljs-number >0</span>
+    running_loss = <span class=hljs-number >0.0</span>
+    running_corrects = <span class=hljs-number >0</span>
+    <span class=hljs-keyword >for</span> inputs,classes <span class=hljs-keyword >in</span> dataloader:
+        inputs = inputs.to(device)
+        classes = classes.to(device)
+        outputs = model(inputs)
+        loss = criterion(outputs,classes)           
+        _,preds = torch.<span class=hljs-built_in >max</span>(outputs.data,<span class=hljs-number >1</span>)
+            <span class=hljs-comment ># statistics</span>
+        running_loss += loss.data.item()
+        running_corrects += torch.<span class=hljs-built_in >sum</span>(preds == classes.data)
+        predictions[i:i+<span class=hljs-built_in >len</span>(classes)] = preds.to(<span class=hljs-string >&#x27;cpu&#x27;</span>).numpy()
+        all_classes[i:i+<span class=hljs-built_in >len</span>(classes)] = classes.to(<span class=hljs-string >&#x27;cpu&#x27;</span>).numpy()
+        all_proba[i:i+<span class=hljs-built_in >len</span>(classes),:] = outputs.data.to(<span class=hljs-string >&#x27;cpu&#x27;</span>).numpy()
+        i += <span class=hljs-built_in >len</span>(classes)
+    epoch_loss = running_loss / size
+    epoch_acc = running_corrects.data.item() / size
+    <span class=hljs-built_in >print</span>(<span class=hljs-string >&#x27;Loss: {:.4f} Acc: {:.4f}&#x27;</span>.<span class=hljs-built_in >format</span>(
+                     epoch_loss, epoch_acc))
+    <span class=hljs-keyword >return</span> predictions, all_proba, all_classes</code></pre>
+<pre><code class="python hljs">predictions, all_proba, all_classes = test_model(model_vgg,loader_valid,size=dset_sizes[<span class=hljs-string >&#x27;valid&#x27;</span>])</code></pre>
+<pre><code class="python hljs"><span class=hljs-comment ># Get a batch of training data</span>
+inputs, classes = <span class=hljs-built_in >next</span>(<span class=hljs-built_in >iter</span>(loader_valid))
+
+out = torchvision.utils.make_grid(inputs[<span class=hljs-number >0</span>:n_images])
+
+imshow(out, title=[dset_classes[x] <span class=hljs-keyword >for</span> x <span class=hljs-keyword >in</span> classes[<span class=hljs-number >0</span>:n_images]])</code></pre>
+<pre><code class="python hljs">outputs = model_vgg(inputs[:n_images].to(device))
+<span class=hljs-built_in >print</span>(torch.exp(outputs))</code></pre>
+<pre><code class="python hljs">classes[:n_images]</code></pre>
+<h2 id=speeding_up_the_learning_by_precomputing_features ><a href="#speeding_up_the_learning_by_precomputing_features" class=header-anchor >Speeding up the learning by precomputing features</a></h2>
+<p><a href="https://youtu.be/ZhC-DIrCe6A?t&#61;3460">Video timestamp</a></p>
+<p>Here you are wasting a lot of time computing over and over the same quantities. Indeed, the first part of the VGG model &#40;called <code>features</code> and made of convolutional layers&#41; is frozen and never updated. Hence, we can precompute for each image in the dataset, the output of these convolutional layers as these outputs will always be the same during your training process.</p>
+<p>This is what is done below.</p>
+<pre><code class="python hljs">x_try = model_vgg.features(inputs_try)</code></pre>
+<pre><code class="python hljs">x_try.shape</code></pre>
+<p>You see that the features computed for an image is of shape 512x7x7 &#40;above we have a batch corresponding to 5 images&#41;.</p>
+<pre><code class="python hljs"><span class=hljs-keyword >def</span> <span class="hljs-title function_">preconvfeat</span>(<span class=hljs-params >dataloader</span>):
+    conv_features = []
+    labels_list = []
+    <span class=hljs-keyword >for</span> data <span class=hljs-keyword >in</span> dataloader:
+        inputs,labels = data
+        inputs = inputs.to(device)
+        labels = labels.to(device)
+        
+        x = model_vgg.features(inputs)
+        conv_features.extend(x.data.cpu().numpy())
+        labels_list.extend(labels.data.cpu().numpy())
+    conv_features = np.concatenate([[feat] <span class=hljs-keyword >for</span> feat <span class=hljs-keyword >in</span> conv_features])
+    <span class=hljs-keyword >return</span> (conv_features,labels_list)</code></pre>
+<pre><code class="python hljs">%%time
+conv_feat_train,labels_train = preconvfeat(loader_train)</code></pre>
+<pre><code class="python hljs">conv_feat_train.shape</code></pre>
+<pre><code class="python hljs">%%time
+conv_feat_valid,labels_valid = preconvfeat(loader_valid)</code></pre>
+<h3 id=creating_a_new_data_generator ><a href="#creating_a_new_data_generator" class=header-anchor >Creating a new data generator</a></h3>
+<p>We will not load images anymore, so we need to build our own data loader. If you do not understand the cell below, it is OK&#33; We will come back to it in Lesson 5...</p>
+<pre><code class="python hljs">dtype=torch.<span class=hljs-built_in >float</span>
+datasetfeat_train = [[torch.from_numpy(f).<span class=hljs-built_in >type</span>(dtype),torch.tensor(l).<span class=hljs-built_in >type</span>(torch.long)] <span class=hljs-keyword >for</span> (f,l) <span class=hljs-keyword >in</span> <span class=hljs-built_in >zip</span>(conv_feat_train,labels_train)]
+datasetfeat_train = [(inputs.reshape(-<span class=hljs-number >1</span>), classes) <span class=hljs-keyword >for</span> [inputs,classes] <span class=hljs-keyword >in</span> datasetfeat_train]
+loaderfeat_train = torch.utils.data.DataLoader(datasetfeat_train, batch_size=<span class=hljs-number >128</span>, shuffle=<span class=hljs-literal >True</span>)</code></pre>
+<pre><code class="python hljs">%%time
+train_model(model_vgg.classifier,dataloader=loaderfeat_train,size=dset_sizes[<span class=hljs-string >&#x27;train&#x27;</span>],epochs=<span class=hljs-number >50</span>,optimizer=optimizer_vgg)</code></pre>
+<pre><code class="python hljs">datasetfeat_valid = [[torch.from_numpy(f).<span class=hljs-built_in >type</span>(dtype),torch.tensor(l).<span class=hljs-built_in >type</span>(torch.long)] <span class=hljs-keyword >for</span> (f,l) <span class=hljs-keyword >in</span> <span class=hljs-built_in >zip</span>(conv_feat_valid,labels_valid)]
+datasetfeat_valid = [(inputs.reshape(-<span class=hljs-number >1</span>), classes) <span class=hljs-keyword >for</span> [inputs,classes] <span class=hljs-keyword >in</span> datasetfeat_valid]
+loaderfeat_valid = torch.utils.data.DataLoader(datasetfeat_valid, batch_size=<span class=hljs-number >128</span>, shuffle=<span class=hljs-literal >False</span>)</code></pre>
+<pre><code class="python hljs">predictions, all_proba, all_classes = test_model(model_vgg.classifier,dataloader=loaderfeat_valid,size=dset_sizes[<span class=hljs-string >&#x27;valid&#x27;</span>])</code></pre>
+<h2 id=ol_start4_viewing_model_prediction_qualitative_analysis ><a href="#ol_start4_viewing_model_prediction_qualitative_analysis" class=header-anchor ><ol start=4 >
+<li><p>Viewing model prediction &#40;qualitative analysis&#41;</p>
+
+</ol>
+</a></h2>
+<p><a href="https://youtu.be/ZhC-DIrCe6A?t&#61;3819">Video timestamp</a></p>
+<p>The most important metrics for us to look at are for the validation set, since we want to check for over-fitting.</p>
+<p>With our first model we should try to overfit before we start worrying about how to handle that - there&#39;s no point even thinking about regularization, data augmentation, etc if you&#39;re still under-fitting&#33; &#40;We&#39;ll be looking at these techniques after the 2 weeks break...&#41;</p>
+<p>As well as looking at the overall metrics, it&#39;s also a good idea to look at examples of each of:</p>
+<ol>
+<li><p>A few correct labels at random</p>
+
+<li><p>A few incorrect labels at random</p>
+
+<li><p>The most correct labels of each class &#40;ie those with highest probability that are correct&#41;</p>
+
+<li><p>The most incorrect labels of each class &#40;ie those with highest probability that are incorrect&#41;</p>
+
+<li><p>The most uncertain labels &#40;ie those with probability closest to 0.5&#41;.</p>
+
+</ol>
+<p>In general, these are particularly useful for debugging problems in the model. Since our model is very simple, there may not be too much to learn at this stage...</p>
+<pre><code class="python hljs"><span class=hljs-comment ># Number of images to view for each visualization task</span>
+n_view = <span class=hljs-number >8</span></code></pre>
+<pre><code class="python hljs">correct = np.where(predictions==all_classes)[<span class=hljs-number >0</span>]</code></pre>
+<pre><code class="python hljs"><span class=hljs-built_in >len</span>(correct)/dset_sizes[<span class=hljs-string >&#x27;valid&#x27;</span>]</code></pre>
+<pre><code class="python hljs"><span class=hljs-keyword >from</span> numpy.random <span class=hljs-keyword >import</span> random, permutation
+idx = permutation(correct)[:n_view]</code></pre>
+<pre><code class="python hljs">idx</code></pre>
+<pre><code class="python hljs">loader_correct = torch.utils.data.DataLoader([dsets[<span class=hljs-string >&#x27;valid&#x27;</span>][x] <span class=hljs-keyword >for</span> x <span class=hljs-keyword >in</span> idx],batch_size = n_view,shuffle=<span class=hljs-literal >True</span>)</code></pre>
+<pre><code class="python hljs"><span class=hljs-keyword >for</span> data <span class=hljs-keyword >in</span> loader_correct:
+    inputs_cor,labels_cor = data</code></pre>
+<pre><code class="python hljs"><span class=hljs-comment ># Make a grid from batch</span>
+out = torchvision.utils.make_grid(inputs_cor)
+
+imshow(out, title=[l.item() <span class=hljs-keyword >for</span> l <span class=hljs-keyword >in</span> labels_cor])</code></pre>
+<pre><code class="python hljs"><span class=hljs-keyword >from</span> IPython.display <span class=hljs-keyword >import</span> Image, display
+<span class=hljs-keyword >for</span> x <span class=hljs-keyword >in</span> idx:
+    display(Image(filename=dsets[<span class=hljs-string >&#x27;valid&#x27;</span>].imgs[x][<span class=hljs-number >0</span>], retina=<span class=hljs-literal >True</span>))</code></pre>
+<pre><code class="python hljs">incorrect = np.where(predictions!=all_classes)[<span class=hljs-number >0</span>]
+<span class=hljs-keyword >for</span> x <span class=hljs-keyword >in</span> permutation(incorrect)[:n_view]:
+    <span class=hljs-comment >#print(dsets[&#x27;valid&#x27;].imgs[x][1])</span>
+    display(Image(filename=dsets[<span class=hljs-string >&#x27;valid&#x27;</span>].imgs[x][<span class=hljs-number >0</span>], retina=<span class=hljs-literal >True</span>))</code></pre>
+<pre><code class="python hljs"><span class=hljs-comment >#3. The images we most confident were cats, and are actually cats</span>
+correct_cats = np.where((predictions==<span class=hljs-number >0</span>) &amp; (predictions==all_classes))[<span class=hljs-number >0</span>]
+most_correct_cats = np.argsort(all_proba[correct_cats,<span class=hljs-number >1</span>])[:n_view]</code></pre>
+<pre><code class="python hljs"><span class=hljs-keyword >for</span> x <span class=hljs-keyword >in</span> most_correct_cats:
+    display(Image(filename=dsets[<span class=hljs-string >&#x27;valid&#x27;</span>].imgs[correct_cats[x]][<span class=hljs-number >0</span>], retina=<span class=hljs-literal >True</span>))</code></pre>
+<pre><code class="python hljs"><span class=hljs-comment >#3. The images we most confident were dogs, and are actually dogs</span>
+correct_dogs = np.where((predictions==<span class=hljs-number >1</span>) &amp; (predictions==all_classes))[<span class=hljs-number >0</span>]
+most_correct_dogs = np.argsort(all_proba[correct_dogs,<span class=hljs-number >0</span>])[:n_view]</code></pre>
+<pre><code class="python hljs"><span class=hljs-keyword >for</span> x <span class=hljs-keyword >in</span> most_correct_dogs:
+    display(Image(filename=dsets[<span class=hljs-string >&#x27;valid&#x27;</span>].imgs[correct_dogs[x]][<span class=hljs-number >0</span>], retina=<span class=hljs-literal >True</span>))</code></pre>
+<h1 id=conclusion ><a href="#conclusion" class=header-anchor >Conclusion</a></h1>
+<p>What did we do in the end? A simple logistic regression&#33; If the connection is unclear, we&#39;ll explain it on a much simpler example in the next course. </p>
+<p>We probably killed a fly with a sledge hammer&#33;</p>
+<p>In our case, the sledge hammer is VGG pretrained on Imagenet, a dataset containing a lot of pictures of cats and dogs. Indeed, we saw that without modification the network was able to predict dog and cat breeds. Hence it is not very surprising that the features computed by VGG are very accurate for our classification task. In the end, we need to learn only the parameters of the last linear layer, i.e. 8194 parameters &#40;do not forget the bias <span class=katex ><span class=katex-mathml ><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>×</mo><mn>4096</mn><mo>+</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">2\times 4096+2</annotation></semantics></math></span><span class=katex-html  aria-hidden=true ><span class=base ><span class=strut  style="height:0.72777em;vertical-align:-0.08333em;"></span><span class=mord >2</span><span class=mspace  style="margin-right:0.2222222222222222em;"></span><span class=mbin >×</span><span class=mspace  style="margin-right:0.2222222222222222em;"></span></span><span class=base ><span class=strut  style="height:0.72777em;vertical-align:-0.08333em;"></span><span class=mord >4</span><span class=mord >0</span><span class=mord >9</span><span class=mord >6</span><span class=mspace  style="margin-right:0.2222222222222222em;"></span><span class=mbin >+</span><span class=mspace  style="margin-right:0.2222222222222222em;"></span></span><span class=base ><span class=strut  style="height:0.64444em;vertical-align:0em;"></span><span class=mord >2</span></span></span></span>&#41;. Indeed, this can be done on CPU without any problem.</p>
+<p>Nevertheless, this example is still instructive as it shows all the necessary steps in a deep learning project. Here we did not struggle with the learning process of a deep network, but we did all the preliminary engineering tasks: dowloading a dataset, setting up the environment to use a GPU, preparing the data, computing the features with a pretrained VGG, saving them on your drive so that you can use them for a later experiment... These steps are essential in any deep learning project and a necessary requirement before having fun playing with network architectures and understanding the learning process.</p>
+<p><a href="https://dataflowr.github.io/website/"><img src="https://raw.githubusercontent.com/dataflowr/website/master/_assets/dataflowr_logo.png" alt=Dataflowr  /></a></p>
+<div class=page-foot >
+  <div class=copyright >
+    <a href="https://github.com/dataflowr/website/tree/master"><b>Edit this page on <img class=github-logo  src="https://unpkg.com/ionicons@5.1.2/dist/svg/logo-github.svg"></b></a>
+    Last modified: August 26, 2022. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+  </div>
+</div>
+</div>
+    </div>
