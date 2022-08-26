@@ -30,7 +30,7 @@
 ## Slides and Notebook
 
 - [slides](https://dataflowr.github.io/slides/module1.html)
-- [notebook](https://github.com/dataflowr/notebooks/blob/master/Module1/01_intro.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module1/01_intro.ipynb) Dogs and Cats with VGG.
+- Dogs and Cats with VGG: [static notebook](/notebooks_md/01_intro), [code (GitHub)](https://github.com/dataflowr/notebooks/blob/master/Module1/01_intro.ipynb) or running in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module1/01_intro.ipynb)
 
 ## Practicals
 
