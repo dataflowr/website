@@ -23,6 +23,11 @@
 
 ## Notebook
 
-- [notebook](https://github.com/dataflowr/notebooks/blob/master/Module2/02a_basics.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module2/02a_basics.ipynb)
+- [static notebook](/notebooks_md/02a_basics), [code (GitHub)](https://github.com/dataflowr/notebooks/blob/master/Module2/02a_basics.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module2/02a_basics.ipynb)
+
+
+## Quiz
+
+To check your understanding of the material, you can do the [quizzes](https://dataflowr.github.io/quiz/module2a.html)
 
 <!-- - Ask your question on the [forum](https://forum.dataflowr.com/t/lesson-2-tensors-and-automatic-differentiation/15) -->
