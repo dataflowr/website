@@ -28,6 +28,6 @@
 
 ## Quiz
 
-To check your understanding of the material, you can do the [quizzes](https://dataflowr.github.io/quiz/module2a.html)
+To check your understanding of the material, you can do the [quizzes](https://dataflowr.github.io/quiz/module2.html)
 
 <!-- - Ask your question on the [forum](https://forum.dataflowr.com/t/lesson-2-tensors-and-automatic-differentiation/15) -->

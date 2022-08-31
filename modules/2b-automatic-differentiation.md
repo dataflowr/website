@@ -26,7 +26,7 @@
 
 ## Slides and Notebook
 
-
+- Automatic differentiation: a simple example [static notebook](/notebooks_md/02a_basics), [code (GitHub)](https://github.com/dataflowr/notebooks/blob/master/Module2/02a_basics.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module2/02a_basics.ipynb)
 - [notebook](https://github.com/dataflowr/notebooks/blob/master/Module2/02b_linear_reg.ipynb) used in the video for the linear regression. If you want to open it in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module2/02b_linear_reg.ipynb)
 - Bonus: [JAX](https://jax.readthedocs.io/en/latest/index.html) implementation of the linear regression [notebook](https://github.com/dataflowr/notebooks/blob/master/Module2/linear_regression_jax.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module2/linear_regression_jax.ipynb)
 - [backprop slide](https://raw.githubusercontent.com/dataflowr/slides/master/backprop.pdf) (used for the practical below)
@@ -34,3 +34,7 @@
 ## Practicals
 
 - [practicals](https://github.com/dataflowr/notebooks/blob/master/Module2/02_backprop.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module2/02_backprop.ipynb) Coding backprop. <!-- [solution](https://forum.dataflowr.com/t/link-to-solution-2-simple-implementation-of-backprop/55) (forum login required) -->
+
+## Quiz
+
+To check your understanding of automatic differentiation, you can do the [quizzes](https://dataflowr.github.io/quiz/module2.html)
