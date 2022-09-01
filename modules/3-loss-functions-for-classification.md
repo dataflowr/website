@@ -66,8 +66,3 @@ assert loss1(m(input),target) == loss2(input,target)
 
 To check you know your loss, you can do the [quizzes](https://dataflowr.github.io/quiz/module3.html)
 
-<!-- ## Frequently asked questions
-
-### Why using the sigmoid as link function for classification?
-
-Because its gradient has simple form: $\sigma' = \sigma(1 - \sigma)$. -->
