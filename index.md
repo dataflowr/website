@@ -18,7 +18,7 @@
 Pre-requisites:
 
 - Mathematics: basics of linear algebra, probability, differential calculus and optimization
-- Programming: basic proficiency Python
+- Programming: Python. Test your proficiency: [quiz](https://dataflowr.github.io/quiz/python.html)
 
 **Super fast track** to learn the basics of deep learning from scratch:
 - Have a look at the [slides](https://dataflowr.github.io/slides/module1.html) of [Module 1: Introduction & General Overview](./modules/1-intro-general-overview)
