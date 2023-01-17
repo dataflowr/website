@@ -36,5 +36,17 @@
 To check your understanding of automatic differentiation, you can do the [quizzes](https://dataflowr.github.io/quiz/module2.html)
 ## Practicals
 
+![](https://dataflowr.github.io/notebooks/Module2/img/backprop3.png)
+
 - [practicals](https://github.com/dataflowr/notebooks/blob/master/Module2/02_backprop.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module2/02_backprop.ipynb) Coding backprop. <!-- [solution](https://forum.dataflowr.com/t/link-to-solution-2-simple-implementation-of-backprop/55) (forum login required) -->
 
+## Challenge
+
+Adapt your code to solve the following challenge:
+
+![](https://dataflowr.github.io/notebooks/Module2/img/backprop4.png)
+
+Some small modifications:
+- First modification: we now generate points $(x_t,y_t)$ where $y_t= \exp(w^*\cos(x_t)+b^*)$, i.e $y^*_t$ is obtained by applying a deterministic function to $x_t$ with parameters $w^*$ and $b^*$. Our goal is still to recover the parameters $w^*$ and $b^*$ from the observations $(x_t,y_t)$.
+
+- Second modification: we now generate points $(x_t,y_t)$ where $y_t= \exp(w^*\cos(p^*x_t)+b^*)$, i.e $y^*_t$ is obtained by applying a deterministic function to $x_t$ with parameters $p^*$, $w^*$ and $b^*$. Our goal is still to recover the parameters from the observations $(x_t,y_t)$.
