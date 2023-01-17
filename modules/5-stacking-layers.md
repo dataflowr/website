@@ -20,3 +20,7 @@
 ## Slides
 
 - [slides](https://dataflowr.github.io/slides/module5.html)
+
+## Practicals
+
+- [notebook](https://github.com/dataflowr/notebooks/blob/master/Module5/Stacking_layers_MLP_CIFAR10.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module5/Stacking_layers_MLP_CIFAR10.ipynb)
