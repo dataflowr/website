@@ -1,6 +1,6 @@
 @def sequence = ["intro-julia"]
 
-# Module 12 - Introduction to Julia: Automatic differentiation with dual numbers
+# Module - Introduction to Julia: Automatic differentiation with dual numbers
 
 
 **Table of Contents**
