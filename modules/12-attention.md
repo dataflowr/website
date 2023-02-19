@@ -16,7 +16,7 @@ The task considered is English-to-French translation and the attention mechanism
 Now the main novelty is the introduction of the context $c_i$ which is a weighted average of all the hidden states of the encoder: $c_i = \sum_{j=1}^T \alpha_{i,j} h_j$ where $T$ is the length of the input sequence, $h_1,\dots, h_T$ are the corresponding hidden states of the decoder and $\sum_j \alpha_{i,j}=1$. Hence the context allows passing direct information from the 'relevant' part of the input to the decoder. The coefficients $(\alpha_{i,j})_{j=1}^T$ are computed from the current hidden state of the decoder $s_{i-1}$ and all the hidden states from the encoder $(h_1, \dots, h_T)$ as explained below (taken from the original paper):
 
 
-~~~<img src="/modules/extras/attention/attention_rnn.jpeg"
+~~~<img src="/modules/extras/attention/attention_bahdanau.png"
            style="width: 620px; height: auto; display: inline">
 ~~~
 
@@ -101,10 +101,16 @@ Each of these layers is applied on each of the inputs given to the transformer b
 
 ![](/modules/extras/attention/dessin.jpg)
 
+Note that this block is equivariant: if we permute the inputs, then the outputs will be permuted with the same permutation. As a result, the order of the input is irrelevant to the transformer block. In particular, this order cannot be used.
+The important notion of positional encoding allows us to take order into account. It is a deterministic unique encoding for each time step that is added to the input tokens.
+
 ## Transformers using Named Tensor Notation
 
 In [Transformers using Named Tensor Notation](https://hackmd.io/@mlelarge/HkVlvrc8j), we derive the formal equations for the Transformer block using named tensor notation.
 
+
+
+
 ## Hacking a simple Transformer block
 
-Now is the time to have fun building a simple transformer block and to [think like transformers](https://github.com/dataflowr/notebooks/blob/master/Module12/GPT_hist.ipynb) (open in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module12/GPT_hist.ipynb))
+Now is the time to have fun building a simple transformer block and to [think like transformers](https://github.com/dataflowr/notebooks/blob/master/Module12/GPT_hist.ipynb) (open in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module12/GPT_hist.ipynb)).
