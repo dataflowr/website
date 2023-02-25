@@ -114,3 +114,11 @@ In [Transformers using Named Tensor Notation](https://hackmd.io/@mlelarge/HkVlvr
 ## Hacking a simple Transformer block
 
 Now is the time to have fun building a simple transformer block and to [think like transformers](https://github.com/dataflowr/notebooks/blob/master/Module12/GPT_hist.ipynb) (open in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module12/GPT_hist.ipynb)).
+
+~~~<img src="/modules/extras/attention/attention_matrix.png"
+           style="width: 320px; height: auto; display: inline">
+~~~
+
+~~~<img src="/modules/extras/attention/attention_matrix2.png"
+           style="width: 320px; height: auto; display: inline">
+~~~
