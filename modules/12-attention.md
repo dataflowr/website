@@ -52,11 +52,11 @@ $$
 \text{the values: } V = W_V X', \text{ with, } W_V\in \mathbb{R}^{d_{\text{out}}\times d'}
 $$
 
-Now self-attention is simply obtained with $X=X'$ (so that $d'=d_{\text{in}}$) and $d_{\text{in}} = d_{\text{out}} = d$. In summary, self-attention layer can take as input any tensor of the form $X \in \mathbb{R}^{d\times t}$ (for any $t$) has parameters: 
+Now self-attention is simply obtained with $X=X'$ (so that $d'=d_{\text{in}}$) and $d_{\text{in}} = d_{\text{out}} = d$. In summary, self-attention layer can take as input any tensor of the form $X \in \mathbb{R}^{d\times T}$ (for any $T$) has parameters: 
 $$
 W_Q\in \mathbb{R}^{k\times d}, W_K\in \mathbb{R}^{k\times d}, W_V\in \mathbb{R}^{d\times d},
 $$ 
-and produce $Y \in \mathbb{R}^{d\times t}$ (with same $d$ and $t$ as for the input). $d$ is the dimension of the input and $k$ is a hyper-parameter of the self-attention layer:
+and produce $Y \in \mathbb{R}^{d\times T}$ (with same $d$ and $t$ as for the input). $d$ is the dimension of the input and $k$ is a hyper-parameter of the self-attention layer:
 $$
 Y_s = \sum_{t=1}^T\text{softmax}_{t}\left(\frac{X_s^TW_Q^TW_KX_t}{\sqrt{k}}\right)W_VX_t,
 $$
