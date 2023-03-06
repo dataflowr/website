@@ -114,7 +114,7 @@ where $\ba$ is the first column of $W$, i.e. $a_i = W_{i,0}$.
 
 What is the connection with convolution? Well, note that $(C_\ba)_{ij} = a_{i-j}$ so that we have for $\by = C_\ba \bx$:
 $$
-y_j = \sum_\ell (C_\ba)_{j\ell}x_\ell = \sum_\ell a_{\ell-j}x_\ell,
+y_j = \sum_\ell (C_\ba)_{j\ell}x_\ell = \sum_\ell a_{j-\ell}x_\ell,
 $$
 which is the definition of a 1D-convolution:
 $$
