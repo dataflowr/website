@@ -1,6 +1,6 @@
 @def sequence = ["autoencoder"]
 
-# Module 9 - Autoencoders
+# Module 9a - Autoencoders
 
 **Table of Contents**
 
