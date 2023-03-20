@@ -28,7 +28,6 @@
 
 - Automatic differentiation: a simple example [static notebook](/notebooks_md/02a_basics), [code (GitHub)](https://github.com/dataflowr/notebooks/blob/master/Module2/02a_basics.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module2/02a_basics.ipynb)
 - [notebook](https://github.com/dataflowr/notebooks/blob/master/Module2/02b_linear_reg.ipynb) used in the video for the linear regression. If you want to open it in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module2/02b_linear_reg.ipynb)
-- Bonus: [JAX](https://jax.readthedocs.io/en/latest/index.html) implementation of the linear regression [notebook](https://github.com/dataflowr/notebooks/blob/master/Module2/linear_regression_jax.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module2/linear_regression_jax.ipynb)
 - [backprop slide](https://raw.githubusercontent.com/dataflowr/slides/master/backprop.pdf) (used for the practical below)
 
 ## Quiz
@@ -50,3 +49,7 @@ Some small modifications:
 - First modification: we now generate points $(x_t,y_t)$ where $y_t= \exp(w^*\cos(x_t)+b^*)$, i.e $y^*_t$ is obtained by applying a deterministic function to $x_t$ with parameters $w^*$ and $b^*$. Our goal is still to recover the parameters $w^*$ and $b^*$ from the observations $(x_t,y_t)$.
 
 - Second modification: we now generate points $(x_t,y_t)$ where $y_t= \exp(w^*\cos(p^*x_t)+b^*)$, i.e $y^*_t$ is obtained by applying a deterministic function to $x_t$ with parameters $p^*$, $w^*$ and $b^*$. Our goal is still to recover the parameters from the observations $(x_t,y_t)$.
+
+## Bonus: 
+
+- [JAX](https://jax.readthedocs.io/en/latest/index.html) implementation of the linear regression [notebook](https://github.com/dataflowr/notebooks/blob/master/Module2/linear_regression_jax.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module2/linear_regression_jax.ipynb) see [Module 2c](/modules/2c-jax) for more details.
