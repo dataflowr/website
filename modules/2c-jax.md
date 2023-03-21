@@ -86,8 +86,8 @@ Here we will implement in `numpy` a different approach mimicking the functional 
 
 Each function will take 2 arguments: one being the input `x` and the other being the parameters `w`. For each function, we build 2 **vjp** functions taking as argument a gradient $\mathbf{u}$ and corresponding to $J_{\mathbf{f}}(\mathbf{x})$ and $J_{\mathbf{f}}(\mathbf{w})$ so that these functions return $J_{\mathbf{f}}(\mathbf{x})^T \mathbf{u}$ and $J_{\mathbf{f}}(\mathbf{w})^T \mathbf{u}$ respectively. To summarize, for $\mathbf{x} \in \mathbb{R}^n$, $\mathbf{w} \in \mathbb{R}^d$, and, $\mathbf{f}(\mathbf{x},\mathbf{w}) \in \mathbb{R}^m$,
 \begin{align*}
-{\bf jvp}_\mathbf{x}(\mathbf{u}) &= J_{\mathbf{f}}(\mathbf{x})^T \mathbf{u}, \text{ with } J_{\mathbf{f}}(\mathbf{x})\in\mathbb{R}^{m\times n}, \mathbf{u}\in \mathbb{R}^m\\
-{\bf jvp}_\mathbf{w}(\mathbf{u}) &= J_{\mathbf{f}}(\mathbf{w})^T \mathbf{u}, \text{ with } J_{\mathbf{f}}(\mathbf{w})\in\mathbb{R}^{m\times d}, \mathbf{u}\in \mathbb{R}^m
+{\bf vjp}_\mathbf{x}(\mathbf{u}) &= J_{\mathbf{f}}(\mathbf{x})^T \mathbf{u}, \text{ with } J_{\mathbf{f}}(\mathbf{x})\in\mathbb{R}^{m\times n}, \mathbf{u}\in \mathbb{R}^m\\
+{\bf vjp}_\mathbf{w}(\mathbf{u}) &= J_{\mathbf{f}}(\mathbf{w})^T \mathbf{u}, \text{ with } J_{\mathbf{f}}(\mathbf{w})\in\mathbb{R}^{m\times d}, \mathbf{u}\in \mathbb{R}^m
 \end{align*}
 Then backpropagation is simply done by first computing the gradient of the loss and then composing the **vjp** functions in the right order.
 
