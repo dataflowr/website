@@ -28,6 +28,6 @@
 ## Practicals
 
 - [Autoencoders and Noisy Autoencoders](https://github.com/dataflowr/notebooks/blob/master/Module9/09_AE_NoisyAE.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module9/09_AE_NoisyAE.ipynb)
-- [UNet for image segmentation](https://github.com/dataflowr/notebooks/blob/master/Module9/UNet_image_seg.ipynb)
+
 
 

@@ -4,17 +4,18 @@
 
 # Module 18a - Denoising Diffusion Probabilistic Models
 
+This module presents the work: [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239) by Jonathan Ho, Ajay Jain, Pieter Abbeel (2020). It starts with a description of the algorithm, then provides some notebooks to implement it on MNIST and CIFAR10 and finishes with some technical details.
+
 **Table of Contents**
 
 \toc
-
-We start with [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239) by Jonathan Ho, Ajay Jain, Pieter Abbeel (2020)
+## Algorithm 
 
 ~~~<img src="../extras/diffusions/ddpm.png"
            style="width: 620px; height: auto; display: inline">
 ~~~
 
-## Forward diffusion process
+### Forward diffusion process
 
 Given a schedule $\beta_1<\beta_2<\dots <\beta_T$,
 \begin{align*}
@@ -32,8 +33,38 @@ Hence, we have
 \begin{align*}
 x_t = \sqrt{\overline{\alpha}_t}x_0 + \sqrt{1-\overline{\alpha}_t}\epsilon
 \end{align*}
+```python
+class DDPM(nn.Module):
+    def __init__(self, network, num_timesteps, 
+            beta_start=0.0001, beta_end=0.02, device=device):
+        super(DDPM, self).__init__()
+        self.num_timesteps = num_timesteps
+        self.betas = torch.linspace(beta_start, beta_end, 
+                num_timesteps, dtype=torch.float32).to(device)
+        self.alphas = 1.0 - self.betas
+        self.alphas_cumprod = torch.cumprod(self.alphas, axis=0)
+        self.network = network
+        self.device = device
+        self.sqrt_alphas_cumprod = 
+                self.alphas_cumprod ** 0.5 
+        self.sqrt_one_minus_alphas_cumprod = 
+            (1 - self.alphas_cumprod) ** 0.5 
 
-## Approximating the reversed diffusion 
+    def add_noise(self, x_start, noise, timesteps):
+        # The forward process
+        # x_start and noise (bs, n_c, w, d)
+        # timesteps (bs)
+        s1 = self.sqrt_alphas_cumprod[timesteps] # bs
+        s2 = self.sqrt_one_minus_alphas_cumprod[timesteps] # bs
+        s1 = s1.reshape(-1,1,1,1) # (bs, 1, 1, 1)
+        s2 = s2.reshape(-1,1,1,1) # (bs, 1, 1, 1)
+        return s1 * x_start + s2 * noise
+
+    def reverse(self, x, t):
+        # The network estimates the noise added
+        return self.network(x, t)
+```
+### Approximating the reversed diffusion 
 
 Note that the law $q(x_{t-1}|x_t,x_0)$ is explicit:
 \begin{align*}
@@ -83,13 +114,51 @@ Empirically, the prefactor is removed in the loss and instead of summing over al
 \ell(\theta) = \mathbb{E}_\tau\mathbb{E}_\epsilon \left[ \|\epsilon - \epsilon_\theta(\sqrt{\overline{\alpha}_\tau}x_0 + \sqrt{1-\overline{\alpha}_\tau}\epsilon, \tau)\|^2\right]
 \end{align*}
 
-## Sampling
+```python
+    # inside the training loop
+    for step, batch in enumerate(dataloader):
+            batch = batch[0].to(device)
+            noise = torch.randn(batch.shape).to(device)
+            timesteps = torch.randint(0, num_timesteps, (batch.shape[0],)).long().to(device)
+
+            noisy = model.add_noise(batch, noise, timesteps)
+            noise_pred = model.reverse(noisy, timesteps)
+            loss = F.mse_loss(noise_pred, noise)
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+```
+
+
+### Sampling
 
 For sampling, we need to simulate the reversed diffusion (Markov chain) starting from $x_T\sim \mathcal{N}(0,I)$ and then:
 \begin{align*}
 x_{t-1} = \frac{1}{\sqrt{\alpha_t}}\left( x_t-\frac{1-\alpha_t}{\sqrt{1-\overline{\alpha}_t}}\epsilon_\theta(x_t,t)\right)+\sqrt{\beta_t}\epsilon,\text{ with } \epsilon\sim\mathcal{N}(0,I).
 \end{align*}
+```python
+    # inside Module DDPM
+    def step(self, model_output, timestep, sample):
+        # one step of sampling
+        # timestep (1)
+        t = timestep
+        coef_epsilon = (1-self.alphas)/
+                self.sqrt_one_minus_alphas_cumprod
+        coef_eps_t = coef_epsilon[t].reshape(-1,1,1,1)
+        coef_first = 1/self.alphas ** 0.5
+        coef_first_t = coef_first[t].reshape(-1,1,1,1)
+        pred_prev_sample = 
+            coef_first_t*(sample-coef_eps_t*model_output)
 
+        variance = 0
+        if t > 0:
+            noise = torch.randn_like(model_output).to(self.device)
+            variance = ((self.betas[t] ** 0.5) * noise)
+            
+        pred_prev_sample = pred_prev_sample + variance
+
+        return pred_prev_sample
+```
 ## Summary: [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239) 
 (J. Ho, A. Jain, P. Abbeel 2020)
 
@@ -134,9 +203,38 @@ x_{t-1} = \frac{1}{\sqrt{\alpha_t}}\left( x_t-\frac{1-\alpha_t}{\sqrt{1-\overlin
 @@
 
 ## Implementation
+  
+![](../extras/diffusions/mnist_diffusion.gif)
+### MNIST
 
-TDB
+The training of this notebook on colab takes approximately 20 minutes.
+
+- [ddpm\_nano\_empty.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module18/ddpm_nano_empty.ipynb) is the notebook where you code the DDPM algorithm (a simple UNet is provided for the network $\epsilon_\theta(x,t)$), its training and the sampling. You should get results like this:
+
+![](../extras/diffusions/mnist_result.png)
+
+- Here is the corresponding solution: [ddpm\_nano\_sol.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module18/ddpm_nano_sol.ipynb)
+
+
+### CIFAR10
+
+The training of this notebook on colab takes approximately 20 minutes (so do not expect high-quality pictures!). Still, after finetuning on specific classes, we see that the model learns features of the class.
+
+~~~<img src="../extras/diffusions/diffusion_finetuning.png"
+           style="width: 620px; height: auto; display: inline">
+~~~
+
+- [ddpm\_micro\_sol.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module18/ddpm_micro_sol.ipynb)
+
+With a bit more training, you can get results like this:
+
+![](../extras/diffusions/ships.png)
+
+![](../extras/diffusions/horses.png)
+
+![](../extras/diffusions/trucks.png)
+
+
 
 ## Technical details
 
-TBD
