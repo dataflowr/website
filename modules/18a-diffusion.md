@@ -226,7 +226,7 @@ The training of this notebook on colab takes approximately 20 minutes (so do not
 
 - [ddpm\_micro\_sol.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module18/ddpm_micro_sol.ipynb)
 
-With a bit more training, you can get results like this:
+With a bit more training (100 epochs), you can get results like this:
 
 ![](../extras/diffusions/ships.png)
 
@@ -235,6 +235,8 @@ With a bit more training, you can get results like this:
 ![](../extras/diffusions/trucks.png)
 
 
-
 ## Technical details
 
+Note that the Denoising Diffusion Probabilistic Model is the same for MNIST and CIFAR10, we only change the UNet learning to reverse the noise. For CIFAR10, we adapt the UNet provided in [Module 9b](../9b-unet). Indeed, you can still use the code provided here for DDPM with other architectures like more complex ones with self-attention like this [Unet](https://github.com/lucidrains/denoising-diffusion-pytorch/blob/main/denoising_diffusion_pytorch/denoising_diffusion_pytorch.py#L271) coded by [lucidrains](https://github.com/lucidrains) which is the one used in the original paper.
+
+In the paper, the authors used Exponential Moving Average (EMA) on model parameters with a decay factor of $0.999$. This is not implemented here to keep the code as simple as possible.
