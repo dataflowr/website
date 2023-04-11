@@ -1,6 +1,6 @@
 @def sequence = ["flows"]
 
-# Module 9b - Flows
+# Module 9c - Flows
 
 ![](../extras/flows/Real_NVP.png)
 
@@ -43,10 +43,10 @@ Below, we will parametrize $f$ with a neural network and learn $f$ by maximizing
 
 **We need to ensure that $f$ is always invertible and that the determinant is simple to compute.**
 
-## [Density estimation using Real NVP](https://arxiv.org/abs/1605.08803) 
-by Laurent Dinh, Jascha Sohl-Dickstein, Samy Bengio (2016)
+## Density estimation using Real NVP
 
-[Real NVP](https://arxiv.org/abs/1605.08803) uses function $f$ obtained by stacking affine coupling layers which for an input $\mathbf{x}\in \mathbb{R}^D$ produce the output $\mathbf{y}\in\mathbb{R}^D$ defined by (with $ d < D $ ): 
+
+[Real NVP](https://arxiv.org/abs/1605.08803) (introduced by Laurent Dinh, Jascha Sohl-Dickstein, Samy Bengio in 2016) uses function $f$ obtained by stacking affine coupling layers which for an input $\mathbf{x}\in \mathbb{R}^D$ produce the output $\mathbf{y}\in\mathbb{R}^D$ defined by (with $ d < D $ ): 
 \begin{align}
 \label{eq:aff}
 \mathbf{y}_{1:d} &= \mathbf{x}_{1:d}\\

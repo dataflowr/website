@@ -16,4 +16,4 @@
 ## Slides and Notebook
 
 - [slides](https://abursuc.github.io/slides/polytechnique/14-04-batchnorm.html#1)
-- [notebook](https://github.com/dataflowr/notebooks/blob/master/Module14/14_batchnorm_simple.ipynb) 
+- [notebook](https://github.com/dataflowr/notebooks/blob/master/Module16/16_batchnorm_simple.ipynb) 
