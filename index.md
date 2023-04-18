@@ -4,21 +4,51 @@
     This site collects resources to learn Deep Learning in the form of
     Modules available through the sidebar on the left.
     As a student, you can walk through the modules at your own pace and
-    interact with others thanks to the associated [Discord server](https://discord.gg/nZQ3fe3).
-    Then we hope you'll become a [contributor](#for_contributors)
-    by improving this site!
+    interact with others thanks to the associated [Discord server](https://discord.gg/nZQ3fe3). You don’t need any special hardware or software.
 }
 
-## Curators
+## Practical deep learning course
 
-[Marc Lelarge](https://www.di.ens.fr/~lelarge/),  [Andrei Bursuc](https://abursuc.github.io/) with [Jill-Jênn Vie](https://jill-jenn.net/)
+The main goal of the course is to allow students to understand papers, blog posts and codes available online and to adapt them to their projects as soon as possible. In particular, we avoid the use of any high-level neural networks API and focus on the [PyTorch](https://pytorch.org/) library in Python.
 
-## For students
+The course is divided into sessions (containing possibly several modules), each session requiring a significant amount of coding. At the end of this course, students were able to read very recent papers and reproduce (or even ameliorate) their experiments. 
+
+All the code used in this course is available on the GitHub repository [dataflowr/notebooks](https://github.com/dataflowr/notebooks). You will find the solutions to the practicals on this repo! You can fork the repo if you want to run the code locally: [GitHub Docs about fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) then follow the steps in [Module 0](./modules/0-sotfware-installation/). Most of the code will not require a GPU. 
+
+:warning: When a GPU is required , you can launch the code on colab by following the corresponding link given in the module (see for example [Module 1](./modules/1-intro-general-overview/)).
 
 Pre-requisites:
 
 - Mathematics: basics of linear algebra, probability, differential calculus and optimization
 - Programming: Python. Test your proficiency: [quiz](https://dataflowr.github.io/quiz/python.html)
+
+### :sunflower: Session 1
+
+Start right away and train a deep neural network on a GPU with [Module 1 - Introduction & General Overview](./modules/1-intro-general-overview/)
+
+Be sure to build your own classifier with more dogs and cats in the practicals.
+~~~
+<details>
+  <summary>Things to remember</summary>
+~~~
+> - you do not need to understand everything to run a deep learning model! But the main goal of this course will be to come back to each step done today and understand them...
+> - to use the dataloader from Pytorch, you need to follow the API (i.e. for classification store your dataset in folders)
+> - using a pretrained model and modifying it to adapt it to a similar task is easy. 
+> - if you do not understand why we take this loss, that's fine, we'll cover that in Module 3.
+> - even with a GPU, avoid unnecessary computations!
+~~~
+</details>
+~~~
+
+### :sunflower: Session 2
+
+TBA
+## Curators
+
+[Marc Lelarge](https://www.di.ens.fr/~lelarge/),  [Andrei Bursuc](https://abursuc.github.io/) with [Jill-Jênn Vie](https://jill-jenn.net/)
+
+## Course in a hurry
+
 
 **Super fast track** to learn the basics of deep learning from scratch:
 - Have a look at the [slides](https://dataflowr.github.io/slides/module1.html) of [Module 1: Introduction & General Overview](./modules/1-intro-general-overview)

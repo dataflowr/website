@@ -30,11 +30,11 @@
 ## Slides and Notebook
 
 - [slides](https://dataflowr.github.io/slides/module1.html)
-- Dogs and Cats with VGG: [static notebook](/notebooks_md/01_intro), [code (GitHub)](https://github.com/dataflowr/notebooks/blob/master/Module1/01_intro.ipynb) or running in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module1/01_intro.ipynb)
+- Dogs and Cats with VGG: [static notebook](/notebooks_md/01_intro), [code (GitHub)](https://github.com/dataflowr/notebooks/blob/master/Module1/01_intro.ipynb) or running in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module1/01_intro.ipynb) :warning: GPU is required for this notebook :warning:
 
 ## Practicals
 
-- [More dogs and cats with VGG and resnet](https://github.com/dataflowr/notebooks/blob/master/Module1/01_practical_empty.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module1/01_practical_empty.ipynb)
+- [More dogs and cats with VGG and resnet](https://github.com/dataflowr/notebooks/blob/master/Module1/01_practical_empty.ipynb) in [colab](https://colab.research.google.com/github/dataflowr/notebooks/blob/master/Module1/01_practical_empty.ipynb) :warning: GPU is required for this notebook :warning:
 
 <!-- - Ask your questions on the [forum](https://forum.dataflowr.com/t/lesson-1-machine-learning-pipeline/14)
 
