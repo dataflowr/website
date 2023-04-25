@@ -59,7 +59,7 @@ Now we clearly have
 $$
 J_{\mathbf{f}}(W) = \mathbf{x} \text{ since, } \mathbf{f}(\mathbf{x}, W+\Delta W) = \mathbf{f}(\mathbf{x}, W) + \mathbf{x} \Delta W.
 $$
-Note that multiplying $\mathbf{x}$ on the right is actually convenient when using broadcasting, i.e. we can take a batch of input vectors of shape $\text{bs}\times a$ without modifying the math above. 
+Note that multiplying $\mathbf{x}$ on the left is actually convenient when using broadcasting, i.e. we can take a batch of input vectors of shape $\text{bs}\times a$ without modifying the math above. 
 
 ## Implementation
 
@@ -84,7 +84,7 @@ You can have a look at [Module 2b](https://dataflowr.github.io/website/modules/2
 
 Here we will implement in `numpy` a different approach mimicking the functional approach of [JAX](https://jax.readthedocs.io/en/latest/index.html) see [The Autodiff Cookbook](https://jax.readthedocs.io/en/latest/notebooks/autodiff_cookbook.html#).
 
-Each function will take 2 arguments: one being the input `x` and the other being the parameters `w`. For each function, we build 2 **vjp** functions taking as argument a gradient $\mathbf{u}$ and corresponding to $J_{\mathbf{f}}(\mathbf{x})$ and $J_{\mathbf{f}}(\mathbf{w})$ so that these functions return $J_{\mathbf{f}}(\mathbf{x})^T \mathbf{u}$ and $J_{\mathbf{f}}(\mathbf{w})^T \mathbf{u}$ respectively. To summarize, for $\mathbf{x} \in \mathbb{R}^n$, $\mathbf{w} \in \mathbb{R}^d$, and, $\mathbf{f}(\mathbf{x},\mathbf{w}) \in \mathbb{R}^m$,
+Each function will take 2 arguments: one being the input `x` and the other being the parameters `w`. For each function, we build 2 **vjp** functions taking as argument a gradient $\mathbf{u}$, and corresponding to $J_{\mathbf{f}}(\mathbf{x})$ and $J_{\mathbf{f}}(\mathbf{w})$ so that these functions return $J_{\mathbf{f}}(\mathbf{x})^T \mathbf{u}$ and $J_{\mathbf{f}}(\mathbf{w})^T \mathbf{u}$ respectively. To summarize, for $\mathbf{x} \in \mathbb{R}^n$, $\mathbf{w} \in \mathbb{R}^d$, and, $\mathbf{f}(\mathbf{x},\mathbf{w}) \in \mathbb{R}^m$,
 \begin{align*}
 {\bf vjp}_\mathbf{x}(\mathbf{u}) &= J_{\mathbf{f}}(\mathbf{x})^T \mathbf{u}, \text{ with } J_{\mathbf{f}}(\mathbf{x})\in\mathbb{R}^{m\times n}, \mathbf{u}\in \mathbb{R}^m\\
 {\bf vjp}_\mathbf{w}(\mathbf{u}) &= J_{\mathbf{f}}(\mathbf{w})^T \mathbf{u}, \text{ with } J_{\mathbf{f}}(\mathbf{w})\in\mathbb{R}^{m\times d}, \mathbf{u}\in \mathbb{R}^m

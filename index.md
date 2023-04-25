@@ -22,7 +22,7 @@ Pre-requisites:
 - Mathematics: basics of linear algebra, probability, differential calculus and optimization
 - Programming: Python. Test your proficiency: [quiz](https://dataflowr.github.io/quiz/python.html)
 
-### :sunflower: Session 1
+### :sunflower: Session 1 - Finetuning VGG
 
 Start right away and train a deep neural network on a GPU with [Module 1 - Introduction & General Overview](./modules/1-intro-general-overview/)
 
@@ -40,8 +40,23 @@ Be sure to build your own classifier with more dogs and cats in the practicals.
 </details>
 ~~~
 
-### :sunflower: Session 2
+### :sunflower: Session 2 - PyTorch tensors and Autodiff
 
+- [Module 2a - PyTorch tensors](https://dataflowr.github.io/website/modules/2a-pytorch-tensors/)
+- [Module 2b - Automatic differentiation](https://dataflowr.github.io/website/modules/2b-automatic-differentiation/) + Practicals
+- MLP from scratch start of [HW1](https://dataflowr.github.io/website/homework/1-mlp-from-scratch/) 
+- [another look at autodiff with dual numbers and Julia](https://github.com/dataflowr/notebooks/blob/master/Module2/AD_with_dual_numbers_Julia.ipynb)
+~~~
+<details>
+  <summary>Things to remember</summary>
+~~~
+>- Pytorch tensors = Numpy on GPU + gradients!
+>- in deep learning, [broadcasting](https://numpy.org/doc/stable/user/basics.broadcasting.html) is used everywhere. The rules are the same as for Numpy.
+>- Automatic differentiation is not only the chain rule! Backpropagation algorithm (or dual numbers) is a clever algorithm to implement automatic differentiation...
+~~~
+ </details>
+~~~
+### :sunflower: Session 3
 TBA
 ## Curators
 
