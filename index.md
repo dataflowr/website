@@ -57,6 +57,24 @@ Be sure to build your own classifier with more dogs and cats in the practicals.
  </details>
 ~~~
 ### :sunflower: Session 3
+- [Module 3 - Loss function for classification](https://dataflowr.github.io/website/modules/3-loss-functions-for-classification/) 
+- [Module 4 - Optimization for deep learning](https://dataflowr.github.io/website/modules/4-optimization-for-deep-learning/)
+- [Module 5 - Stacking layers](https://dataflowr.github.io/website/modules/5-stacking-layers/) and overfitting a MLP on CIFAR10
+- [Module 6: Convolutional neural network](https://dataflowr.github.io/website/modules/6-convolutional-neural-network/)
+- how to regularize with dropout and uncertainty estimation with MC Dropout: [Module 15 - Dropout](https://dataflowr.github.io/website/modules/15-dropout/)
+~~~
+<details>
+  <summary>Things to remember</summary>
+~~~
+>- Loss vs Accuracy. Know your loss for a classification task!
+>- know your optimizer (Module 4)
+>- know how to build a neural net with torch.nn.module (Module 5)
+>- know how to use convolution and pooling layers (kernel, stride, padding)
+>- know how to use dropout 
+~~~
+</details>
+~~~
+### :sunflower: Session 4
 TBA
 ## Curators
 
