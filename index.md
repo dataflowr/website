@@ -75,6 +75,25 @@ Be sure to build your own classifier with more dogs and cats in the practicals.
 </details>
 ~~~
 ### :sunflower: Session 4
+- [Module 7 - Dataloading](https://dataflowr.github.io/website/modules/7-dataloading/)
+- [Module 8a - Embedding layers](https://dataflowr.github.io/website/modules/8a-embedding-layers/)
+- [Module 8b - Collaborative filtering](https://dataflowr.github.io/website/modules/8b-collaborative-filtering/) and build your own recommender system: [08\_collaborative\_filtering\_empty.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module8/08_collaborative_filtering_empty.ipynb) (on a larger dataset [08\_collaborative\_filtering\_1M.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module8/08_collaborative_filtering_1M.ipynb))
+- [Module 8c - Word2vec](https://dataflowr.github.io/website/modules/8c-word2vec/) and build your own word embedding [08\_Word2vec\_pytorch\_empty.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module8/08_Word2vec_pytorch_empty.ipynb)
+- [Module 16 - Batchnorm](https://dataflowr.github.io/website/modules/16-batchnorm/) and check your understanding with [16\_simple\_batchnorm\_eval.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module16/16_simple_batchnorm_eval.ipynb) and more [16\_batchnorm\_simple.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module16/16_batchnorm_simple.ipynb)
+- [Module 17 - Resnets](https://dataflowr.github.io/website/modules/17-resnets/)
+~~~
+<details>
+  <summary>Things to remember</summary>
+~~~
+> - know how to use dataloader
+> - to deal with categorical variables in deep learning, use embeddings
+> - in the case of word embedding, starting in an unsupervised setting, we built a supervised task (i.e. predicting central / context words in a window) and learned the representation thanks to negative sampling
+> - know your batchnorm
+> - architectures with skip connections allows deeper models
+~~~
+</details>
+~~~
+### :sunflower: Session 5
 TBA
 ## Curators
 
