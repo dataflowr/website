@@ -94,6 +94,10 @@ Be sure to build your own classifier with more dogs and cats in the practicals.
 </details>
 ~~~
 ### :sunflower: Session 5
+- [Module 9a: Autoencoders](https://dataflowr.github.io/website/modules/9a-autoencoders/) and code your noisy autoencoder [09\_AE\_NoisyAE.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module9/09_AE_NoisyAE.ipynb)
+- [Module 10: Generative Adversarial Networks]() and code your GAN, Conditional GAN and InfoGAN [10\_GAN\_double\_moon.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module10/10_GAN_double_moon.ipynb)
+- [Module 13: Siamese Networks and Representation Learning](https://dataflowr.github.io/website/modules/13-siamese/)
+### :sunflower: Session 6
 TBA
 ## Curators
 
