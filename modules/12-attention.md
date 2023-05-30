@@ -99,7 +99,7 @@ where $W_1\in \mathbb{R}^{d\times h}$, $b_1\in \mathbb{R}^h$, $W_2\in \mathbb{R}
 
 Each of these layers is applied on each of the inputs given to the transformer block as depicted below:
 
-![](/modules/extras/attention/dessin.jpg)
+![](/modules/extras/attention/transformer_block_nocode.png)
 
 Note that this block is equivariant: if we permute the inputs, then the outputs will be permuted with the same permutation. As a result, the order of the input is irrelevant to the transformer block. In particular, this order cannot be used.
 The important notion of positional encoding allows us to take order into account. It is a deterministic unique encoding for each time step that is added to the input tokens.
