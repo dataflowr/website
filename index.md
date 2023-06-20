@@ -81,6 +81,7 @@ Be sure to build your own classifier with more dogs and cats in the practicals.
 - [Module 8c - Word2vec](https://dataflowr.github.io/website/modules/8c-word2vec/) and build your own word embedding [08\_Word2vec\_pytorch\_empty.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module8/08_Word2vec_pytorch_empty.ipynb)
 - [Module 16 - Batchnorm](https://dataflowr.github.io/website/modules/16-batchnorm/) and check your understanding with [16\_simple\_batchnorm\_eval.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module16/16_simple_batchnorm_eval.ipynb) and more [16\_batchnorm\_simple.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module16/16_batchnorm_simple.ipynb)
 - [Module 17 - Resnets](https://dataflowr.github.io/website/modules/17-resnets/)
+- start of [Homework 2: Class Activation Map and adversarial examples](https://dataflowr.github.io/website/homework/2-CAM-adversarial/)
 ~~~
 <details>
   <summary>Things to remember</summary>
@@ -97,12 +98,30 @@ Be sure to build your own classifier with more dogs and cats in the practicals.
 - [Module 9a: Autoencoders](https://dataflowr.github.io/website/modules/9a-autoencoders/) and code your noisy autoencoder [09\_AE\_NoisyAE.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module9/09_AE_NoisyAE.ipynb)
 - [Module 10: Generative Adversarial Networks]() and code your GAN, Conditional GAN and InfoGAN [10\_GAN\_double\_moon.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module10/10_GAN_double_moon.ipynb)
 - [Module 13: Siamese Networks and Representation Learning](https://dataflowr.github.io/website/modules/13-siamese/)
+- start of [Homework 3: VAE for MNIST clustering and generation](https://dataflowr.github.io/website/homework/3-VAE/)
 ### :sunflower: Session 6
 - [Module 11a - Recurrent Neural Networks theory](https://dataflowr.github.io/website/modules/11a-recurrent-neural-networks-theory/)
 - [Module 11b - Recurrent Neural Networks practice](https://dataflowr.github.io/website/modules/11b-recurrent-neural-networks-practice/) and predict engine failure with [11\_predicitions\_RNN\_empty.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module11/11_predicitions_RNN_empty.ipynb)
 - [Module 11c - Batches with sequences in Pytorch](https://dataflowr.github.io/website/modules/11c-batches-with-sequences/)
+
 ### :sunflower: Session 7
-TBA
+- [Module 12 - Attention and Transformers](https://dataflowr.github.io/website/modules/12-attention/)
+- Correcting the PyTorch tutorial on attention in seq2seq: [12\_seq2seq\_attention.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module12/12_seq2seq_attention.ipynb)
+- Build your own microGPT: [GPT\_hist.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module12/GPT_hist.ipynb)
+
+### :sunflower: Session 8
+- [Module 9b - UNets](https://dataflowr.github.io/website/modules/9b-unet/)
+- [Module 9c - Flows](https://dataflowr.github.io/website/modules/9c-flows/)
+- Build your own Real NVP: [Normalizing\_flows\_empty.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module9/Normalizing_flows_empty.ipynb)
+### :sunflower: Session 9
+- [Module 18a - Denoising Diffusion Probabilistic Models](https://dataflowr.github.io/website/modules/18a-diffusion/)
+- Train your own DDPM on MNIST: [ddpm\_nano\_empty.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module18/ddpm_nano_empty.ipynb)
+- Finetuning on CIFAR10: [ddpm\_micro\_sol.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module18/ddpm_micro_sol.ipynb)
+
+For more updates: [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/marc_lelarge.svg?style=social&label=Follow%20%40marc_lelarge)](https://twitter.com/marc_lelarge) 
+
+and check the 
+# [GitHub repository: dataflowr/notebooks](https://github.com/dataflowr/notebooks)
 ## Curators
 
 [Marc Lelarge](https://www.di.ens.fr/~lelarge/),  [Andrei Bursuc](https://abursuc.github.io/) with [Jill-Jênn Vie](https://jill-jenn.net/)
