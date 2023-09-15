@@ -8,7 +8,7 @@ contributor by adding modules to this site!
 
 ## Setup to run the website locally
 
-1. Install [Julia](https://julialang.org/downloads/)
+1. Install [Julia](https://julialang.org/downloads/) (make sure to 'add to PATH' so you can use step 2 without having to type the full path)
 2. Launch Julia from the command line:
 
     ``` text
@@ -18,7 +18,7 @@ contributor by adding modules to this site!
 3. Install the required packages:
 
    ``` julia
-   Using Pkg
+   using Pkg
    Pkg.add("Franklin")
    Pkg.add("JSON")
    ```
