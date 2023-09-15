@@ -65,7 +65,7 @@ with the convention that $X_t\in \mathbb{R}^d$ (resp. $Y_s\in \mathbb{R}^d$) is 
 **Mental model for self-attention:** self-attention interpreted as taking expectation
 $$
 y_s = \sum_{t=1}^T p(x_t | x_s) v(x_t) = \mathbb{E}[v(x) | x_s],\\
-\text{with, } p(x_t|x_s) = \frac{\exp(q(x_s)k(x_t))}{\sum_{r}q(x_s)k(x_r)},
+\text{with, } p(x_t|x_s) = \frac{\exp(q(x_s)k(x_t))}{\sum_{r}\exp(q(x_s)k(x_r))},
 $$
 where the mappings $q(.), k(.)$ and $v(.)$ represent query, key and value.
 
