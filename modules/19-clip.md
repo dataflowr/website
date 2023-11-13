@@ -9,7 +9,7 @@
 
 ## Notebook
 
-- in [Zeroshot\_with\_CLIP.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module19/Zeroshot_with_CLIP.ipynb) we build a zero-shop classifier using the pretrained CLIP network and improve its performance with descriptors generated with GPT.
+- in [Zeroshot\_with\_CLIP.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module19/Zeroshot_with_CLIP.ipynb) we build a zero-shot classifier using the pretrained CLIP network and improve its performance with descriptors generated with GPT.
 
 ## References
 
