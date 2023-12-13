@@ -7,6 +7,7 @@
 \toc
 
 
+
 ## Attention with RNNs
 
 The first attention mechanism was proposed in [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473) by Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio (presented at ICLR 2015).
@@ -104,11 +105,15 @@ Each of these layers is applied on each of the inputs given to the transformer b
 Note that this block is equivariant: if we permute the inputs, then the outputs will be permuted with the same permutation. As a result, the order of the input is irrelevant to the transformer block. In particular, this order cannot be used.
 The important notion of positional encoding allows us to take order into account. It is a deterministic unique encoding for each time step that is added to the input tokens.
 
+## LLM Visualization. 
+
+Have a look at Brendan Bycroft’s beautifully crafted interactive explanation of the transformers architecture:
+
+[![gif](/modules/extras/attention/transformer_vizu.gif)](https://bbycroft.net/llm)
+
 ## Transformers using Named Tensor Notation
 
 In [Transformers using Named Tensor Notation](https://hackmd.io/@mlelarge/HkVlvrc8j), we derive the formal equations for the Transformer block using named tensor notation.
-
-
 
 
 ## Hacking a simple Transformer block
