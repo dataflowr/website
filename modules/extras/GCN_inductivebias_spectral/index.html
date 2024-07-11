@@ -33,17 +33,17 @@ _ = plt.hist(all_acc, bins=bin_list,rwidth=<span class=hljs-number >0.8</span>)<
 
 <span class=hljs-keyword >class</span> <span class="hljs-title class_">GCN</span>(torch.nn.Module):
     <span class=hljs-keyword >def</span> <span class="hljs-title function_">__init__</span>(<span class=hljs-params >self</span>):
-        <span class=hljs-built_in >super</span>(GCN, self).__init__()
-        self.conv1 = GCNConv(data.num_nodes, <span class=hljs-number >4</span>)<span class=hljs-comment ># no feature...</span>
-        self.conv2 = GCNConv(<span class=hljs-number >4</span>, <span class=hljs-number >4</span>)
-        self.conv3 = GCNConv(<span class=hljs-number >4</span>, <span class=hljs-number >2</span>)
+        <span class=hljs-built_in >super</span>(GCN, <span class="hljs-variable language_">self</span>).__init__()
+        <span class="hljs-variable language_">self</span>.conv1 = GCNConv(data.num_nodes, <span class=hljs-number >4</span>)<span class=hljs-comment ># no feature...</span>
+        <span class="hljs-variable language_">self</span>.conv2 = GCNConv(<span class=hljs-number >4</span>, <span class=hljs-number >4</span>)
+        <span class="hljs-variable language_">self</span>.conv3 = GCNConv(<span class=hljs-number >4</span>, <span class=hljs-number >2</span>)
 
     <span class=hljs-keyword >def</span> <span class="hljs-title function_">forward</span>(<span class=hljs-params >self, x, edge_index</span>):
-        h = self.conv1(x, edge_index)
+        h = <span class="hljs-variable language_">self</span>.conv1(x, edge_index)
         h = h.tanh()
-        h = self.conv2(h, edge_index)
+        h = <span class="hljs-variable language_">self</span>.conv2(h, edge_index)
         h = h.tanh()
-        h = self.conv3(h, edge_index)
+        h = <span class="hljs-variable language_">self</span>.conv3(h, edge_index)
         <span class=hljs-keyword >return</span> h
 
 torch.manual_seed(<span class=hljs-number >12345</span>)
@@ -194,7 +194,7 @@ _ = plt.hist(coef, bins = <span class=hljs-number >34</span>)</code></pre>
 <div class=page-foot >
   <div class=copyright >
     <a href="https://github.com/dataflowr/website/tree/master"><b>Edit this page on <img class=github-logo  src="https://unpkg.com/ionicons@5.1.2/dist/svg/logo-github.svg"></b></a>
-    Last modified: February 23, 2024. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+    Last modified: July 11, 2024. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
   </div>
 </div>
 </div>
