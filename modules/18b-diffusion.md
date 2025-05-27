@@ -2,7 +2,7 @@
 @def hasmath = true
 
 
-# Module 18a - Denoising Diffusion Probabilistic Models
+# Module 18b - Denoising Diffusion Probabilistic Models
 
 This module presents the work: [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239) by Jonathan Ho, Ajay Jain, Pieter Abbeel (2020). It starts with a description of the algorithm, then provides some notebooks to implement it on MNIST and CIFAR10 and finishes with some technical details.
 
