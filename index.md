@@ -114,7 +114,7 @@ Be sure to build your own classifier with more dogs and cats in the practicals.
 - [Module 9c - Flows](https://dataflowr.github.io/website/modules/9c-flows/)
 - Build your own Real NVP: [Normalizing\_flows\_empty.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module9/Normalizing_flows_empty.ipynb)
 ### :sunflower: Session 9
-- []Module 18a - Denoising Score Matching for Energy Based Models](https://dataflowr.github.io/website/modules/18a-energy/)
+- [Module 18a - Denoising Score Matching for Energy Based Models](https://dataflowr.github.io/website/modules/18a-energy/)
 - [Module 18b - Denoising Diffusion Probabilistic Models](https://dataflowr.github.io/website/modules/18b-diffusion/)
 - Train your own DDPM on MNIST: [ddpm\_nano\_empty.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module18/ddpm_nano_empty.ipynb)
 - Finetuning on CIFAR10: [ddpm\_micro\_sol.ipynb](https://github.com/dataflowr/notebooks/blob/master/Module18/ddpm_micro_sol.ipynb)
