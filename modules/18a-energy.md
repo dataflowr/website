@@ -4,7 +4,7 @@
 
 # Module 18a - Denoising Score Matching for Energy Based Models
 
-This module is based on the work: [How to Train Your Energy-Based Models](https://arxiv.org/abs/2101.03288) by Yang Sond and Diederik P. Kingma (2021). 
+This module is based on the work: [How to Train Your Energy-Based Models](https://arxiv.org/abs/2101.03288) by Yang Song and Diederik P. Kingma (2021). 
 
 ~~~<img src="../extras/diffusions/energy.png"
            style="width: 820px; height: auto; display: inline">
