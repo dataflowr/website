@@ -172,8 +172,9 @@ Thanks to [Daniel Huynh](https://github.com/dhuynh95), [Eric Daoud](https://gith
 - [Module 10b: Recurrent Neural Networks practice](./modules/10b-recurrent-neural-networks-practice)
 -->
 
+Part of this material was done using HPC resources from [GENCI-IDRIS]((http://www.idris.fr/eng/jean-zay/jean-zay-presentation-eng.html)) (Grants 2022-26-AD010613995-R1-R2-R3) 
 
-Materials from this site is used for courses at ENS and X. 
+Materials from this site was used for courses at ENS and X. 
 
 ~~~
 <img src="/assets/ENS_logo.jpg" style="width: 400px; height: auto; display: inline">
